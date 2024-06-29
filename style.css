@@ -179,38 +179,42 @@ footer {
 }
 
 /* Text Color Customizations */
-/* Adjusting colors for specific text elements */
+/* Specific color adjustments for text elements */
 
-/* Header and Navigation */
+/* Header and Navigation Links */
 header nav ul li a {
-    color: #fff; /* All navigation links */
+    color: #fff; /* Color for all navigation links */
 }
 
 header nav ul li a:hover {
-    color: #ccc;
+    color: #ccc; /* Hover color for navigation links */
 }
 
-/* Hero Section */
+/* Hero Section Text */
 .hero h1,
 .hero p {
-    color: #fff; /* Hero section text */
+    color: #fff; /* Color for hero section heading and paragraph */
 }
 
-/* Welcome Section */
+/* Welcome Section Text */
 .welcome h1,
 .welcome p {
-    color: #fff; /* Welcome section text */
+    color: #fff; /* Color for welcome section heading and paragraph */
 }
 
-/* Services Section */
+/* Services Section Text */
 .services h2 {
-    color: #333; /* Services section main heading */
+    color: #333; /* Color for services section main heading */
+}
+
+.services .services-heading {
+    color: #4CAF50; /* Color for "Our Services" heading */
 }
 
 .service-item h3 {
-    color: #333; /* Services item headings */
+    color: #333; /* Color for service item headings */
 }
 
 .service-item p {
-    color: #666; /* Services item text */
+    color: #666; /* Color for service item text */
 }

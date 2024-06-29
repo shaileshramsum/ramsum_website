@@ -81,7 +81,6 @@ nav ul li a:hover {
 
 .hero p {
     font-size: 1.2em;
-    color: #eee;
 }
 
 /* Welcome Section */
@@ -100,7 +99,6 @@ nav ul li a:hover {
 
 .welcome p {
     font-size: 1.2em;
-    color: #eee;
 }
 
 /* Services Section */
@@ -117,7 +115,7 @@ nav ul li a:hover {
 }
 
 .services .services-heading {
-    color: #4CAF50; /* Color for "Our Services" heading */
+    color: #333; /* Color for "Our Services" heading */
 }
 
 .service-item h3 {
@@ -157,46 +155,6 @@ footer {
 /* Text Color Customizations */
 /* Specific color adjustments for text elements */
 
-/* Header and Navigation Links */
-header nav ul li a {
-    color: #fff; /* Color for all navigation links */
-}
-
-header nav ul li a:hover {
-    color: #ccc; /* Hover color for navigation links */
-}
-
-/* Hero Section Text */
-.hero h1,
-.hero p {
-    color: #fff; /* Color for hero section heading and paragraph */
-}
-
-/* Welcome Section Text */
-.welcome h1,
-.welcome p {
-    color: #fff; /* Color for welcome section heading and paragraph */
-}
-
-/* Services Section Text */
-.services h2 {
-    color: #333; /* Color for services section main heading */
-}
-
-.services .services-heading {
-    color: #4CAF50; /* Color for "Our Services" heading */
-}
-
-.service-item h3 {
-    color: #333; /* Color for service item headings */
-}
-
-.service-item p {
-    color: #666; /* Color for service item text */
-}
-
-/* Additional Customizations */
-
 /* Changing color for top navigation links */
 nav ul li a {
     color: #FF9800; /* Orange color for top navigation links */
@@ -205,4 +163,24 @@ nav ul li a {
 /* Changing color for "Your Premier Marketing" line */
 .hero p {
     color: #FF9800; /* Orange color for "Your Premier Marketing" line */
+}
+
+/* Changing color for "About Us", "Contact Us", etc. */
+nav ul li a {
+    color: #673AB7; /* Purple color for navigation links */
+}
+
+/* Changing color for "Our Services" heading */
+.services .services-heading {
+    color: #FF5722; /* Deep Orange color for "Our Services" heading */
+}
+
+/* Changing color for service item headings */
+.service-item h3 {
+    color: #03A9F4; /* Light Blue color for service item headings */
+}
+
+/* Changing color for service item text */
+.service-item p {
+    color: #999; /* Light Gray color for service item text */
 }

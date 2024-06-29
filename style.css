@@ -168,12 +168,13 @@ footer {
     padding: 10px 0;
     color: #fff; /* Text color */
     font-family: 'Montserrat', sans-serif; /* Font family */
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .text-on-bar a {
     color: #fff; /* Links color */
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
     font-size: 16px;
     transition: color 0.3s ease;
 }

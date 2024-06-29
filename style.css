@@ -84,6 +84,25 @@ nav ul li a:hover {
     color: #eee;
 }
 
+/* Welcome Section */
+.welcome {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #eee;
+}
+
 /* Services Section */
 .services {
     background-color: #fff;
@@ -133,25 +152,6 @@ nav ul li a:hover {
     color: #666;
 }
 
-/* Welcome Section */
-.welcome {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.welcome h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    font-family: 'Pacifico', cursive;
-}
-
-.welcome p {
-    font-size: 1.2em;
-    color: #eee;
-}
-
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -176,4 +176,41 @@ footer {
 
 .footer-info a:hover {
     color: #6ab04c;
+}
+
+/* Text Color Customizations */
+/* Adjusting colors for specific text elements */
+
+/* Header and Navigation */
+header nav ul li a {
+    color: #fff; /* All navigation links */
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Hero Section */
+.hero h1,
+.hero p {
+    color: #fff; /* Hero section text */
+}
+
+/* Welcome Section */
+.welcome h1,
+.welcome p {
+    color: #fff; /* Welcome section text */
+}
+
+/* Services Section */
+.services h2 {
+    color: #333; /* Services section main heading */
+}
+
+.service-item h3 {
+    color: #333; /* Services item headings */
+}
+
+.service-item p {
+    color: #666; /* Services item text */
 }

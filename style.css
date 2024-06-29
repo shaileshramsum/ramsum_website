@@ -81,6 +81,7 @@ nav ul li a:hover {
 
 .hero p {
     font-size: 1.2em;
+    color: #eee;
 }
 
 /* Welcome Section */
@@ -99,6 +100,7 @@ nav ul li a:hover {
 
 .welcome p {
     font-size: 1.2em;
+    color: #eee;
 }
 
 /* Services Section */
@@ -114,16 +116,40 @@ nav ul li a:hover {
     color: #333;
 }
 
-.services .services-heading {
-    color: #333; /* Color for "Our Services" heading */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    color: #4CAF50;
+    margin-bottom: 20px;
 }
 
 .service-item h3 {
-    color: #333; /* Color for service item headings */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .service-item p {
-    color: #666; /* Color for service item text */
+    font-size: 1.1em;
+    color: #666;
 }
 
 /* Footer Styles */
@@ -153,34 +179,38 @@ footer {
 }
 
 /* Text Color Customizations */
-/* Specific color adjustments for text elements */
+/* Adjusting colors for specific text elements */
 
-/* Changing color for top navigation links */
-nav ul li a {
-    color: #FF9800; /* Orange color for top navigation links */
+/* Header and Navigation */
+header nav ul li a {
+    color: #fff; /* All navigation links */
 }
 
-/* Changing color for "Your Premier Marketing" line */
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Hero Section */
+.hero h1,
 .hero p {
-    color: #FF9800; /* Orange color for "Your Premier Marketing" line */
+    color: #fff; /* Hero section text */
 }
 
-/* Changing color for "About Us", "Contact Us", etc. */
-nav ul li a {
-    color: #673AB7; /* Purple color for navigation links */
+/* Welcome Section */
+.welcome h1,
+.welcome p {
+    color: #fff; /* Welcome section text */
 }
 
-/* Changing color for "Our Services" heading */
-.services .services-heading {
-    color: #FF5722; /* Deep Orange color for "Our Services" heading */
+/* Services Section */
+.services h2 {
+    color: #333; /* Services section main heading */
 }
 
-/* Changing color for service item headings */
 .service-item h3 {
-    color: #03A9F4; /* Light Blue color for service item headings */
+    color: #333; /* Services item headings */
 }
 
-/* Changing color for service item text */
 .service-item p {
-    color: #999; /* Light Gray color for service item text */
+    color: #666; /* Services item text */
 }

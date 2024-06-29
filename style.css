@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #333;
+    color: #6ab04c;
 }
 
 .container {
@@ -30,9 +30,10 @@ a:hover {
 
 /* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #00bcd4;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
 .logo {
@@ -65,9 +66,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #00bcd4;
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -76,7 +75,8 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Pacifico', cursive;
 }
 
 .hero p {
@@ -133,6 +133,25 @@ nav ul li a:hover {
     color: #666;
 }
 
+/* Welcome Section */
+.welcome {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    color: #eee;
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -156,5 +175,5 @@ footer {
 }
 
 .footer-info a:hover {
-    color: #fff;
+    color: #6ab04c;
 }

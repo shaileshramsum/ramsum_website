@@ -116,40 +116,16 @@ nav ul li a:hover {
     color: #333;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    justify-items: center;
-}
-
-.service-item {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-    transform: translateY(-10px);
-}
-
-.service-item i {
-    color: #4CAF50;
-    margin-bottom: 20px;
+.services .services-heading {
+    color: #4CAF50; /* Color for "Our Services" heading */
 }
 
 .service-item h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #333;
+    color: #333; /* Color for service item headings */
 }
 
 .service-item p {
-    font-size: 1.1em;
-    color: #666;
+    color: #666; /* Color for service item text */
 }
 
 /* Footer Styles */
@@ -217,4 +193,16 @@ header nav ul li a:hover {
 
 .service-item p {
     color: #666; /* Color for service item text */
+}
+
+/* Additional Customizations */
+
+/* Changing color for top navigation links */
+nav ul li a {
+    color: #FF9800; /* Orange color for top navigation links */
+}
+
+/* Changing color for "Your Premier Marketing" line */
+.hero p {
+    color: #FF9800; /* Orange color for "Your Premier Marketing" line */
 }

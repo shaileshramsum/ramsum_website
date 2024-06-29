@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.media-gallery {
+    margin-top: 20px;
+}
+
+.video, .photo {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.company-name {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

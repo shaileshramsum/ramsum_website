@@ -1,70 +1,155 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #fafafa;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #4CAF50;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    float: left;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    float: right;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.intro, .mission, .history, .values, .media-gallery {
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    margin: 20px 0;
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
 }
 
-h1, h2 {
-    color: #007bff;
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
 }
 
-.media {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.hero p {
+    font-size: 1.2em;
 }
 
-.video, .photo {
-    margin: 10px;
-    width: 200px;
-    height: auto;
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 80px 0;
 }
 
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
-.company-name {
-    margin-left: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: #fff;
+}
+
+.footer-info a:hover {
+    color: #4CAF50;
 }

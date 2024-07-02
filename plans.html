@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plans and Pricing for Ramsum Creatives Services">
+    <title>Plans - Ramsum Creatives</title>
+    <link rel="stylesheet" href="plans.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .plan-details {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .plan-details.active {
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Ramsum Creatives Logo"></a>
+            </div>
+            <nav>
+                <div class="text-on-bar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="team.html">Team</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="plans.html">Plans</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="plans-hero">
+            <div class="container">
+                <h1>Our Plans</h1>
+                <p>Choose the perfect plan for your business needs.</p>
+            </div>
+        </section>
+
+        <section class="plans-content">
+            <div class="container">
+                <h2>Pricing Plans</h2>
+                <p>We offer flexible pricing plans to suit businesses of all sizes.</p>
+                <div class="plans-grid">
+                    <div class="plan-item">
+                        <h3><a href="#" class="plan-toggle" data-plan="basic">Basic</a></h3>
+                        <div id="basic" class="plan-details">
+                            <p>Price: $100/month</p>
+                            <ul>
+                                <li>Landing Page Design</li>
+                                <li>Basic SEO</li>
+                                <li>Email Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <h3><a href="#" class="plan-toggle" data-plan="advanced">Advanced</a></h3>
+                        <div id="advanced" class="plan-details">
+                            <p>Price: $200/month</p>
+                            <ul>
+                                <li>Website Design</li>
+                                <li>Advanced SEO</li>
+                                <li>Priority Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <h3><a href="#" class="plan-toggle" data-plan="premium">Premium</a></h3>
+                        <div id="premium" class="plan-details">
+                            <p>Price: $300/month</p>
+                            <ul>
+                                <li>Full Project Video Production</li>
+                                <li>Complete Marketing Campaign</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plan-item">
+                        <h3><a href="#" class="plan-toggle" data-plan="customized">Customized</a></h3>
+                        <div id="customized" class="plan-details">
+                            <p>Price: Custom</p>
+                            <ul>
+                                <li>Tailored Services</li>
+                                <li>Custom SEO Strategies</li>
+                                <li>Dedicated Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Contact Us for a Custom Plan</h2>
+                <form action="mailto:contact@ramsum.in" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name:</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Your Role:</label>
+                        <input type="text" id="role" name="role" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Contact us: <a href="tel:+917985135684">+917985135684</a> | Email: <a href="mailto:contact@ramsum.in">contact@ramsum.in</a></p>
+                <p>Locations: Mumbai, Delhi, Bahraich</p>
+                <p>&copy; 2024 Ramsum Creatives. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggles = document.querySelectorAll('.plan-toggle');
+            toggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var target = document.getElementById(toggle.getAttribute('data-plan'));
+                    var allDetails = document.querySelectorAll('.plan-details');
+                    allDetails.forEach(function (detail) {
+                        detail.classList.remove('active');
+                    });
+                    target.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-I52U1L49l7Hh4NKhEKjlAigGldHnlFvnXRTzwhkUyGZQLOyPSkNj6w+fBCFC5Xl7lQsg0kJTT1JcmZf1FFPj2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

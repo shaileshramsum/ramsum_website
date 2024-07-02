@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request for Proposal - Ramsum Creatives">
+    <title>Request for Proposal - Ramsum Creatives</title>
+    <link rel="stylesheet" href="proposal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Ramsum Creatives Logo"></a>
+            </div>
+            <nav>
+                <div class="text-on-bar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                    <a href="team.html">Team</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="plans.html">Plans</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="proposal">
+            <div class="container">
+                <h2>Fill Your Requirements</h2>
+                <p>Please fill out the form below to request a proposal for our services.</p>
+                <form action="mailto:contact@ramsum.in" method="post" enctype="text/plain" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company's Name:</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="social-media">Present on Social Media?</label>
+                        <select id="social-media" name="social-media" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Have a Website?</label>
+                        <select id="website" name="website" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Your Role in the Company:</label>
+                        <input type="text" id="role" name="role" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email ID:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>Contact us: <a href="tel:+917985135684">+917985135684</a> | Email: <a href="mailto:contact@ramsum.in">contact@ramsum.in</a></p>
+                <p>Locations: Mumbai, Delhi, Bahraich</p>
+                <p>&copy; 2024 Ramsum Creatives. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const socialMedia = document.getElementById('social-media').value;
+            const website = document.getElementById('website').value;
+            const role = document.getElementById('role').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            if (!name || !company || !socialMedia || !website || !role || !phone || !email) {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

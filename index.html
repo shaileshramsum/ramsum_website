@@ -8,174 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: #333;
-            padding: 10px 0;
-        }
-
-        header .logo img {
-            max-height: 50px;
-        }
-
-        nav .text-on-bar a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        nav .text-on-bar a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: url('images/hero.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-        }
-
-        .focus-results {
-            background-color: #fff;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .focus-results h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .focus-results .proposal-link {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 20px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .focus-results .proposal-link:hover {
-            background-color: #0056b3;
-        }
-
-        .services {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .services h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .services p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        .service-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .service-item {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .service-item h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .service-item p {
-            font-size: 1em;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #007bff;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Article Section */
-        .articles {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .articles h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .article-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .article-item {
-            width: calc(30% - 20px);
-            background-color: #f48fb1;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .article-item.expanded {
-            width: 100%;
-            background-color: #fff;
-        }
-
+        /* Additional styles for animation */
         .article-content {
             display: none;
-            margin-top: 20px;
-            text-align: left;
             padding: 20px;
-            background-color: #f0f4c3;
-            border-radius: 10px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -208,7 +46,6 @@
             </div>
         </section>
 
-        <!-- New Section: We Focus On Driving Results -->
         <section class="focus-results">
             <div class="container">
                 <h2>We Focus On Driving Results</h2>
@@ -221,51 +58,51 @@
                 <h2>Our Services</h2>
                 <p>We offer a wide range of marketing and advertising services.</p>
                 <div class="service-list">
-                    <div class="service-item" onclick="location.href='service1.html'">
+                    <div class="service-item">
                         <h3>Marketing Strategy</h3>
                         <p>Effective strategies to boost your business.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service2.html'">
+                    <div class="service-item">
                         <h3>Branding</h3>
                         <p>Creative campaigns to engage your audience.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service3.html'">
+                    <div class="service-item">
                         <h3>Video Production</h3>
                         <p>High-quality videos to tell your story.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service4.html'">
+                    <div class="service-item">
                         <h3>Social Media Marketing</h3>
                         <p>Expand your reach with targeted campaigns.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service5.html'">
+                    <div class="service-item">
                         <h3>SEO Optimization</h3>
                         <p>Improve your search engine rankings.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service6.html'">
+                    <div class="service-item">
                         <h3>Content Marketing</h3>
                         <p>Engaging content to attract your audience.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service7.html'">
+                    <div class="service-item">
                         <h3>Email Marketing</h3>
                         <p>Personalized email campaigns for better engagement.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service8.html'">
+                    <div class="service-item">
                         <h3>Pay Per Click</h3>
                         <p>Effective PPC campaigns for immediate results.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service9.html'">
+                    <div class="service-item">
                         <h3>Market Analysis</h3>
                         <p>In-depth analysis to understand market trends.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service10.html'">
+                    <div class="service-item">
                         <h3>Web Development</h3>
                         <p>Responsive and SEO-friendly websites.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service11.html'">
+                    <div class="service-item">
                         <h3>Graphic Design</h3>
                         <p>Stunning graphics to captivate your audience.</p>
                     </div>
-                    <div class="service-item" onclick="location.href='service12.html'">
+                    <div class="service-item">
                         <h3>Consulting</h3>
                         <p>Expert advice to guide your marketing efforts.</p>
                     </div>
@@ -276,16 +113,16 @@
         <!-- Articles Section -->
         <section class="articles">
             <div class="container">
-                <h2>Latest Articles</h2>
+                <h2>Articles</h2>
                 <div class="article-list">
                     <div class="article-item" onclick="toggleArticle('article1')">
                         <h3>Need of Google Ads</h3>
-                        <p>Google Ads is a powerful tool for...</p>
+                        <p>Google Ads is a powerful tool for digital marketers...</p>
                         <a href="#">Read more</a>
                     </div>
                     <div class="article-item" onclick="toggleArticle('article2')">
                         <h3>Need of Social Media Marketing</h3>
-                        <p>Social media marketing helps in...</p>
+                        <p>Social media marketing helps in connecting...</p>
                         <a href="#">Read more</a>
                     </div>
                     <div class="article-item" onclick="toggleArticle('article3')">
@@ -330,12 +167,14 @@
     <script>
         function toggleArticle(articleId) {
             var article = document.getElementById(articleId);
-            if (article.style.display === 'none') {
-                article.style.display = 'block';
-                article.classList.add('expanded');
-            } else {
-                article.style.display = 'none';
-                article.classList.remove('expanded');
+            var articleList = document.querySelectorAll('.article-content');
+            
+            for (var i = 0; i < articleList.length; i++) {
+                if (articleList[i].id === articleId) {
+                    articleList[i].style.display = articleList[i].style.display === 'block' ? 'none' : 'block';
+                } else {
+                    articleList[i].style.display = 'none';
+                }
             }
         }
     </script>

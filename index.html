@@ -111,17 +111,17 @@
                     <div class="article-item" onclick="showArticle('article1')">
                         <h3>Need of Google Ads</h3>
                         <p>Google Ads is a powerful tool for businesses...</p>
-                        <a href="#" class="read-more" onclick="showArticle('article1')">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="article-item" onclick="showArticle('article2')">
                         <h3>Need of Social Media Marketing</h3>
                         <p>Social Media Marketing is essential in today's digital age...</p>
-                        <a href="#" class="read-more" onclick="showArticle('article2')">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                     <div class="article-item" onclick="showArticle('article3')">
                         <h3>Need of Learning Using AI</h3>
                         <p>AI is revolutionizing the way we learn and work...</p>
-                        <a href="#" class="read-more" onclick="showArticle('article3')">Read More</a>
+                        <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
                 <div class="article-content" id="article1">
@@ -162,7 +162,16 @@
             articles.forEach(article => {
                 article.style.display = 'none';
             });
-            document.getElementById(articleId).style.display = 'block';
+            document.querySelectorAll('.article-item').forEach(item => {
+                item.style.width = '30%';
+                item.style.transition = 'width 0.3s ease';
+            });
+
+            const selectedArticle = document.getElementById(articleId);
+            selectedArticle.style.display = 'block';
+
+            const selectedBox = document.querySelector(`.article-item[onclick="showArticle('${articleId}')"]`);
+            selectedBox.style.width = '100%';
         }
     </script>
 </body>

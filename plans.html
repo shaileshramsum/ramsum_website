@@ -7,30 +7,6 @@
     <title>Plans - Ramsum Creatives</title>
     <link rel="stylesheet" href="plans.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .plan-details {
-            display: none;
-            padding: 10px;
-            border: 1px solid #ccc;
-            margin-top: 10px;
-        }
-        .plan-details.active {
-            display: block;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -171,9 +147,11 @@
                     var target = document.getElementById(toggle.getAttribute('data-plan'));
                     var allDetails = document.querySelectorAll('.plan-details');
                     allDetails.forEach(function (detail) {
-                        detail.classList.remove('active');
+                        if (detail !== target) {
+                            detail.classList.remove('active');
+                        }
                     });
-                    target.classList.add('active');
+                    target.classList.toggle('active');
                 });
             });
         });

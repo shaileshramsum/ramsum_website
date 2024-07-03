@@ -1,4 +1,3 @@
-/* Reset and General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +10,12 @@ body {
     color: #333;
 }
 
-/* Container Styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     padding: 10px 0;
@@ -38,7 +35,6 @@ nav .text-on-bar a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section Styles */
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
@@ -55,7 +51,6 @@ nav .text-on-bar a:hover {
     font-size: 1.5em;
 }
 
-/* Focus Results Section Styles */
 .focus-results {
     background-color: #fff;
     padding: 50px 0;
@@ -81,7 +76,6 @@ nav .text-on-bar a:hover {
     background-color: #0056b3;
 }
 
-/* Services Section Styles */
 .services {
     padding: 50px 0;
     text-align: center;
@@ -118,71 +112,6 @@ nav .text-on-bar a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service-image {
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
-}
-
-.service1 {
-    background-image: url('images/service1.jpg');
-}
-
-.service2 {
-    background-image: url('images/service2.jpg');
-}
-
-.service3 {
-    background-image: url('images/service3.jpg');
-}
-
-.service4 {
-    background-image: url('images/service4.jpg');
-}
-
-.service5 {
-    background-image: url('images/service5.jpg');
-}
-
-.service6 {
-    background-image: url('images/service6.jpg');
-}
-
-.service7 {
-    background-image: url('images/service7.jpg');
-}
-
-.service8 {
-    background-image: url('images/service8.jpg');
-}
-
-.service9 {
-    background-image: url('images/service9.jpg');
-}
-
-.service10 {
-    background-image: url('images/service10.jpg');
-}
-
-.service11 {
-    background-image: url('images/service11.jpg');
-}
-
-.service12 {
-    background-image: url('images/service12.jpg');
-}
-
-.service-item h3 {
-    margin-bottom: 10px;
-}
-
-.service-item p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Articles Section Styles */
 .articles {
     padding: 50px 0;
     text-align: center;
@@ -233,7 +162,6 @@ nav .text-on-bar a:hover {
     color: #666;
 }
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;

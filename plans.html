@@ -87,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="other-plans" id="other-plans"></div>
             </div>
         </section>
 
@@ -153,62 +152,8 @@
                         }
                     });
                     target.classList.toggle('active');
-
-                    var otherPlans = document.getElementById('other-plans');
-                    otherPlans.innerHTML = '';
-
-                    toggles.forEach(function (otherToggle) {
-                        if (otherToggle !== toggle) {
-                            var planName = otherToggle.textContent;
-                            var planLink = document.createElement('a');
-                            planLink.href = '#';
-                            planLink.className = 'plan-toggle';
-                            planLink.dataset.plan = otherToggle.dataset.plan;
-                            planLink.textContent = planName;
-                            planLink.addEventListener('click', function (event) {
-                                event.preventDefault();
-                                var target = document.getElementById(planLink.getAttribute('data-plan'));
-                                allDetails.forEach(function (detail) {
-                                    if (detail !== target) {
-                                        detail.classList.remove('active');
-                                    }
-                                });
-                                target.classList.toggle('active');
-                                updateOtherPlans(toggle);
-                            });
-                            otherPlans.appendChild(planLink);
-                        }
-                    });
                 });
             });
-
-            function updateOtherPlans(activeToggle) {
-                var otherPlans = document.getElementById('other-plans');
-                otherPlans.innerHTML = '';
-                toggles.forEach(function (toggle) {
-                    if (toggle !== activeToggle) {
-                        var planName = toggle.textContent;
-                        var planLink = document.createElement('a');
-                        planLink.href = '#';
-                        planLink.className = 'plan-toggle';
-                        planLink.dataset.plan = toggle.dataset.plan;
-                        planLink.textContent = planName;
-                        planLink.addEventListener('click', function (event) {
-                            event.preventDefault();
-                            var target = document.getElementById(planLink.getAttribute('data-plan'));
-                            var allDetails = document.querySelectorAll('.plan-details');
-                            allDetails.forEach(function (detail) {
-                                if (detail !== target) {
-                                    detail.classList.remove('active');
-                                }
-                            });
-                            target.classList.toggle('active');
-                            updateOtherPlans(toggle);
-                        });
-                        otherPlans.appendChild(planLink);
-                    }
-                });
-            }
         });
     </script>
 

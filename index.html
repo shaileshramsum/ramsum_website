@@ -114,6 +114,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- Articles Section -->
+        <section class="articles">
+            <div class="container">
+                <h2>Latest Articles</h2>
+                <div class="article-list">
+                    <div class="article-item" onclick="showArticle('article1')">
+                        <h3>Need of Google Ads</h3>
+                    </div>
+                    <div class="article-item" onclick="showArticle('article2')">
+                        <h3>Need of Social Media Marketing</h3>
+                    </div>
+                    <div class="article-item" onclick="showArticle('article3')">
+                        <h3>Need of Learning Using AI</h3>
+                    </div>
+                </div>
+                <div class="article-content" id="article1">
+                    <h3>Need of Google Ads</h3>
+                    <p>Google Ads is a powerful tool for businesses of all sizes. At Ramsum Creatives, we leverage Google Ads to drive targeted traffic to your website, increase your online visibility, and boost your sales. With our expertise, you can achieve better ROI and reach your business goals more effectively.</p>
+                </div>
+                <div class="article-content" id="article2">
+                    <h3>Need of Social Media Marketing</h3>
+                    <p>Social Media Marketing is essential in today's digital age. At Ramsum Creatives, we create engaging social media campaigns that connect with your audience and promote your brand. Our strategies help you build a loyal customer base, increase brand awareness, and drive conversions.</p>
+                </div>
+                <div class="article-content" id="article3">
+                    <h3>Need of Learning Using AI</h3>
+                    <p>AI is revolutionizing the way we learn and work. At Ramsum Creatives, we use AI-powered tools to enhance our marketing strategies, providing you with data-driven insights and personalized solutions. Embrace AI with us to stay ahead of the curve and achieve your business objectives.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -127,5 +157,14 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-I52U1L49l7Hh4NKhEKjlAigGldHnlFvnXRTzwhkUyGZQLOyPSkNj6w+fBCFC5Xl7lQsg0kJTT1JcmZf1FFPj2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function showArticle(articleId) {
+            const articles = document.querySelectorAll('.article-content');
+            articles.forEach(article => {
+                article.style.display = 'none';
+            });
+            document.getElementById(articleId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

@@ -7,6 +7,177 @@
     <title>Ramsum Creatives</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        header .logo img {
+            max-height: 50px;
+        }
+
+        nav .text-on-bar a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav .text-on-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .focus-results {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .focus-results h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .focus-results .proposal-link {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .focus-results .proposal-link:hover {
+            background-color: #0056b3;
+        }
+
+        .services {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .services p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #007bff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Section */
+        .articles {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .articles h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .article-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .article-item {
+            width: calc(30% - 20px);
+            background-color: #f48fb1;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .article-item.expanded {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .article-content {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+            padding: 20px;
+            background-color: #f0f4c3;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,57 +216,56 @@
             </div>
         </section>
 
-        <!-- Services Section -->
         <section class="services">
             <div class="container">
                 <h2>Our Services</h2>
                 <p>We offer a wide range of marketing and advertising services.</p>
                 <div class="service-list">
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service1.html'">
                         <h3>Marketing Strategy</h3>
                         <p>Effective strategies to boost your business.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service2.html'">
                         <h3>Branding</h3>
                         <p>Creative campaigns to engage your audience.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service3.html'">
                         <h3>Video Production</h3>
                         <p>High-quality videos to tell your story.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service4.html'">
                         <h3>Social Media Marketing</h3>
                         <p>Expand your reach with targeted campaigns.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service5.html'">
                         <h3>SEO Optimization</h3>
                         <p>Improve your search engine rankings.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service6.html'">
                         <h3>Content Marketing</h3>
                         <p>Engaging content to attract your audience.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service7.html'">
                         <h3>Email Marketing</h3>
                         <p>Personalized email campaigns for better engagement.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service8.html'">
                         <h3>Pay Per Click</h3>
                         <p>Effective PPC campaigns for immediate results.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service9.html'">
                         <h3>Market Analysis</h3>
                         <p>In-depth analysis to understand market trends.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service10.html'">
                         <h3>Web Development</h3>
                         <p>Responsive and SEO-friendly websites.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service11.html'">
                         <h3>Graphic Design</h3>
                         <p>Stunning graphics to captivate your audience.</p>
                     </div>
-                    <div class="service-item">
+                    <div class="service-item" onclick="location.href='service12.html'">
                         <h3>Consulting</h3>
                         <p>Expert advice to guide your marketing efforts.</p>
                     </div>
@@ -108,39 +278,40 @@
             <div class="container">
                 <h2>Latest Articles</h2>
                 <div class="article-list">
-                    <div class="article-item" onclick="showArticle('article1')">
+                    <div class="article-item" onclick="toggleArticle('article1')">
                         <h3>Need of Google Ads</h3>
-                        <p>Google Ads is a powerful tool for businesses...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <p>Google Ads is a powerful tool for...</p>
+                        <a href="#">Read more</a>
                     </div>
-                    <div class="article-item" onclick="showArticle('article2')">
+                    <div class="article-item" onclick="toggleArticle('article2')">
                         <h3>Need of Social Media Marketing</h3>
-                        <p>Social Media Marketing is essential in today's digital age...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <p>Social media marketing helps in...</p>
+                        <a href="#">Read more</a>
                     </div>
-                    <div class="article-item" onclick="showArticle('article3')">
-                        <h3>Need of Learning Using AI</h3>
-                        <p>AI is revolutionizing the way we learn and work...</p>
-                        <a href="#" class="read-more">Read More</a>
+                    <div class="article-item" onclick="toggleArticle('article3')">
+                        <h3>Need of learning using AI</h3>
+                        <p>Artificial Intelligence is revolutionizing...</p>
+                        <a href="#">Read more</a>
                     </div>
                 </div>
-                <div class="article-content" id="article1">
+                <!-- Article Content -->
+                <div id="article1" class="article-content">
                     <h3>Need of Google Ads</h3>
-                    <p>Google Ads is a powerful tool for businesses of all sizes. At Ramsum Creatives, we leverage Google Ads to drive targeted traffic to your website, increase your online visibility, and boost your sales. With our expertise, you can achieve better ROI and reach your business goals more effectively.</p>
-                    <p>Our team is dedicated to creating customized ad campaigns that align with your business objectives. We analyze your market, target audience, and competition to develop strategies that deliver results. By using Google Ads, we ensure that your business appears in front of potential customers at the right time, driving more traffic and generating leads.</p>
-                    <p>With Ramsum Creatives, you can maximize your advertising budget and see tangible improvements in your online presence. Let us help you harness the power of Google Ads to grow your business and achieve success.</p>
+                    <p>Google Ads is a powerful tool for digital marketers to reach...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec justo varius ultrices. Ut ac neque sit amet ante accumsan efficitur. Nam feugiat, ipsum non lobortis consequat, turpis ipsum tincidunt mauris, ac interdum lorem libero vel ipsum. Fusce interdum erat non sapien fermentum, sed convallis lacus efficitur.</p>
+                    <p>Mauris id lacus nec mauris lobortis tincidunt. Duis in nisi convallis, dapibus nisl vel, dapibus risus. Mauris scelerisque ac magna vel pharetra. Proin quis elit luctus, euismod eros eget, fringilla velit. Duis euismod mauris vel nisl malesuada elementum. Aliquam erat volutpat.</p>
                 </div>
-                <div class="article-content" id="article2">
+                <div id="article2" class="article-content">
                     <h3>Need of Social Media Marketing</h3>
-                    <p>Social Media Marketing is essential in today's digital age. At Ramsum Creatives, we create engaging social media campaigns that connect with your audience and promote your brand. Our strategies help you build a loyal customer base, increase brand awareness, and drive conversions.</p>
-                    <p>We understand the dynamics of various social media platforms and tailor our approach to suit each one. Whether it's Facebook, Instagram, Twitter, or LinkedIn, we craft content that resonates with your target audience. Our goal is to foster meaningful interactions that lead to customer loyalty and brand advocacy.</p>
-                    <p>Partner with Ramsum Creatives to elevate your social media presence. We provide insights, create impactful content, and manage your accounts to ensure consistent growth. Let us help you navigate the complexities of social media marketing and achieve your business goals.</p>
+                    <p>Social media marketing helps in connecting...</p>
+                    <p>Nulla sed elementum ipsum. Fusce convallis malesuada erat, nec vehicula sem aliquam ac. Ut vel felis eget turpis blandit laoreet et sit amet velit. Donec at mi sed risus hendrerit rutrum. Aenean convallis, ex non varius iaculis, libero est iaculis mauris, nec efficitur risus ipsum in arcu.</p>
+                    <p>Nunc eget odio vel libero bibendum malesuada. Sed eget orci dictum, placerat arcu sed, fermentum nisl. Curabitur lacinia metus vel blandit pharetra. Mauris in ante sed erat rutrum accumsan. Proin vel justo euismod, vehicula turpis sit amet, feugiat urna. Proin sollicitudin felis at lectus rutrum, a ultricies neque rutrum.</p>
                 </div>
-                <div class="article-content" id="article3">
-                    <h3>Need of Learning Using AI</h3>
-                    <p>AI is revolutionizing the way we learn and work. At Ramsum Creatives, we use AI-powered tools to enhance our marketing strategies, providing you with data-driven insights and personalized solutions. Embrace AI with us to stay ahead of the curve and achieve your business objectives.</p>
-                    <p>Our AI-driven approach helps us understand consumer behavior, predict trends, and optimize campaigns for better performance. We use advanced analytics to gather insights and make informed decisions that benefit your business. By leveraging AI, we can create more effective marketing strategies that deliver results.</p>
-                    <p>Join Ramsum Creatives in exploring the potential of AI in marketing. Let us help you unlock new opportunities, improve efficiency, and drive innovation. Together, we can transform your business with the power of AI.</p>
+                <div id="article3" class="article-content">
+                    <h3>Need of learning using AI</h3>
+                    <p>Artificial Intelligence is revolutionizing...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec justo varius ultrices. Ut ac neque sit amet ante accumsan efficitur. Nam feugiat, ipsum non lobortis consequat, turpis ipsum tincidunt mauris, ac interdum lorem libero vel ipsum. Fusce interdum erat non sapien fermentum, sed convallis lacus efficitur.</p>
+                    <p>Mauris id lacus nec mauris lobortis tincidunt. Duis in nisi convallis, dapibus nisl vel, dapibus risus. Mauris scelerisque ac magna vel pharetra. Proin quis elit luctus, euismod eros eget, fringilla velit. Duis euismod mauris vel nisl malesuada elementum. Aliquam erat volutpat.</p>
                 </div>
             </div>
         </section>
@@ -148,30 +319,24 @@
 
     <footer>
         <div class="container">
-            <div class="footer-info">
-                <p>Contact us: <a href="tel:+917985135684">+917985135684</a> | Email: <a href="mailto:contact@ramsum.in">contact@ramsum.in</a></p>
-                <p>Locations: Mumbai, Delhi, Bahraich</p>
-                <p>&copy; 2024 Ramsum Creatives. All rights reserved.</p>
-            </div>
+            <p>&copy; 2024 Ramsum Creatives. All rights reserved. | Designed by [Your Name]</p>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </nav>
         </div>
     </footer>
 
     <script>
-        function showArticle(articleId) {
-            const articles = document.querySelectorAll('.article-content');
-            articles.forEach(article => {
+        function toggleArticle(articleId) {
+            var article = document.getElementById(articleId);
+            if (article.style.display === 'none') {
+                article.style.display = 'block';
+                article.classList.add('expanded');
+            } else {
                 article.style.display = 'none';
-            });
-            const articleItems = document.querySelectorAll('.article-item');
-            articleItems.forEach(item => {
-                item.classList.remove('expanded');
-            });
-
-            const selectedArticle = document.getElementById(articleId);
-            selectedArticle.style.display = 'block';
-
-            const selectedBox = document.querySelector(`.article-item[onclick="showArticle('${articleId}')"]`);
-            selectedBox.classList.add('expanded');
+                article.classList.remove('expanded');
+            }
         }
     </script>
 </body>

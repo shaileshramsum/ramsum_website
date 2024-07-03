@@ -162,16 +162,16 @@
             articles.forEach(article => {
                 article.style.display = 'none';
             });
-            document.querySelectorAll('.article-item').forEach(item => {
-                item.style.width = '30%';
-                item.style.transition = 'width 0.3s ease';
+            const articleItems = document.querySelectorAll('.article-item');
+            articleItems.forEach(item => {
+                item.classList.remove('expanded');
             });
 
             const selectedArticle = document.getElementById(articleId);
             selectedArticle.style.display = 'block';
 
             const selectedBox = document.querySelector(`.article-item[onclick="showArticle('${articleId}')"]`);
-            selectedBox.style.width = '100%';
+            selectedBox.classList.add('expanded');
         }
     </script>
 </body>

@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -104,14 +100,33 @@ nav .text-on-bar a:hover {
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
-.service-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
+.service-item p {
+    font-size: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Article Section */
 .articles {
     padding: 50px 0;
     text-align: center;
@@ -129,73 +144,26 @@ nav .text-on-bar a:hover {
 }
 
 .article-item {
-    width: 30%;
-    background-color: #fff;
+    width: calc(30% - 20px);
+    background-color: #f48fb1;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    transition: box-shadow 0.3s ease, width 0.3s ease;
     cursor: pointer;
-}
-
-.article-item h3 {
-    color: #4CAF50;
-}
-
-.article-item p {
-    color: #6ab04c;
-}
-
-.article-item .read-more {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.article-item .read-more:hover {
-    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
 .article-item.expanded {
     width: 100%;
-    background-color: #e0f7fa;
+    background-color: #fff;
 }
 
 .article-content {
     display: none;
-    background-color: #fff;
-    padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     text-align: left;
-}
-
-.article-content h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-}
-
-.article-content p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-info {
-    font-size: 0.9em;
-}
-
-.footer-info a {
-    color: #4CAF50;
-}
-
-.footer-info a:hover {
-    color: #6ab04c;
+    padding: 20px;
+    background-color: #f0f4c3;
+    border-radius: 10px;
 }

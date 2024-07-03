@@ -50,6 +50,7 @@ nav .text-on-bar a:hover {
 .plans-content {
     padding: 50px 0;
     text-align: center;
+    background-color: #e0f7fa; /* You can change this color or use an image */
 }
 
 .plans-content h2 {
@@ -72,14 +73,23 @@ nav .text-on-bar a:hover {
 .plan-item {
     background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .plan-item:hover {
     transform: scale(1.05);
+}
+
+.plan-item h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.plan-item h3 a:hover {
+    text-decoration: underline;
 }
 
 .plan-details {
@@ -130,45 +140,4 @@ nav .text-on-bar a:hover {
     border: none;
     background-color: #555;
     color: #fff;
-    border-radius: 5px;
-}
-
-.contact-form .form-group textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #e8491d;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #ff5c33;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    border-radius: 5

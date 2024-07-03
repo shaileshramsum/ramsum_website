@@ -7,15 +7,6 @@
     <title>Ramsum Creatives</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Additional styles for animation */
-        .article-content {
-            display: none;
-            padding: 20px;
-            background-color: #f0f0f0;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -110,73 +101,74 @@
             </div>
         </section>
 
-        <!-- Articles Section -->
         <section class="articles">
             <div class="container">
                 <h2>Articles</h2>
                 <div class="article-list">
-                    <div class="article-item" onclick="toggleArticle('article1')">
+                    <div class="article-item">
                         <h3>Need of Google Ads</h3>
-                        <p>Google Ads is a powerful tool for digital marketers...</p>
-                        <a href="#">Read more</a>
+                        <p>Google Ads can significantly boost your online visibility and drive targeted traffic to your website.</p>
+                        <a href="#" class="read-more">Read More</a>
+                        <div class="article-content">
+                            <p>Google Ads, formerly known as Google AdWords, is a powerful advertising platform that allows businesses to reach their target audience through paid search advertisements.</p>
+                            <p>By using Google Ads, businesses can create ads that appear on Google's search engine results page and other Google properties.</p>
+                            <p>The key benefits of using Google Ads include:</p>
+                            <ul>
+                                <li>Increased visibility</li>
+                                <li>Precise targeting options</li>
+                                <li>Measurable results</li>
+                            </ul>
+                            <p>Overall, Google Ads is an effective tool for businesses looking to increase their online presence and drive relevant traffic to their websites.</p>
+                        </div>
                     </div>
-                    <div class="article-item" onclick="toggleArticle('article2')">
+                    <div class="article-item">
                         <h3>Need of Social Media Marketing</h3>
-                        <p>Social media marketing helps in connecting...</p>
-                        <a href="#">Read more</a>
+                        <p>Social media marketing plays a crucial role in building brand awareness, engaging customers, and driving website traffic.</p>
+                        <a href="#" class="read-more">Read More</a>
+                        <div class="article-content">
+                            <p>Social media marketing involves creating and sharing content on social media platforms to achieve your marketing and branding goals.</p>
+                            <p>Key benefits of social media marketing include:</p>
+                            <ul>
+                                <li>Increased brand awareness</li>
+                                <li>Improved brand loyalty</li>
+                                <li>Higher conversion rates</li>
+                            </ul>
+                            <p>Businesses can use social media platforms like Facebook, Instagram, Twitter, and LinkedIn to connect with their target audience, build relationships, and drive traffic to their websites.</p>
+                            <p>Effective social media marketing strategies focus on creating valuable content, engaging with followers, and analyzing performance metrics to optimize campaigns.</p>
+                        </div>
                     </div>
-                    <div class="article-item" onclick="toggleArticle('article3')">
-                        <h3>Need of learning using AI</h3>
-                        <p>Artificial Intelligence is revolutionizing...</p>
-                        <a href="#">Read more</a>
+                    <div class="article-item">
+                        <h3>Need of Learning Using AI</h3>
+                        <p>Artificial Intelligence (AI) is transforming industries by automating processes, enhancing decision-making, and personalizing user experiences.</p>
+                        <a href="#" class="read-more">Read More</a>
+                        <div class="article-content">
+                            <p>AI technologies, such as machine learning, natural language processing, and computer vision, enable businesses to analyze data, predict trends, and automate tasks.</p>
+                            <p>Key benefits of learning and using AI include:</p>
+                            <ul>
+                                <li>Improved efficiency and productivity</li>
+                                <li>Enhanced customer insights</li>
+                                <li>Personalized user experiences</li>
+                            </ul>
+                            <p>Businesses can leverage AI-powered tools and algorithms to gain competitive advantages, streamline operations, and innovate in their respective industries.</p>
+                            <p>As AI continues to evolve, organizations that invest in learning and implementing AI technologies are likely to experience growth, innovation, and strategic advantages.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- Article Content -->
-                <div id="article1" class="article-content">
-                    <h3>Need of Google Ads</h3>
-                    <p>Google Ads is a powerful tool for digital marketers to reach...</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec justo varius ultrices. Ut ac neque sit amet ante accumsan efficitur. Nam feugiat, ipsum non lobortis consequat, turpis ipsum tincidunt mauris, ac interdum lorem libero vel ipsum. Fusce interdum erat non sapien fermentum, sed convallis lacus efficitur.</p>
-                    <p>Mauris id lacus nec mauris lobortis tincidunt. Duis in nisi convallis, dapibus nisl vel, dapibus risus. Mauris scelerisque ac magna vel pharetra. Proin quis elit luctus, euismod eros eget, fringilla velit. Duis euismod mauris vel nisl malesuada elementum. Aliquam erat volutpat.</p>
-                </div>
-                <div id="article2" class="article-content">
-                    <h3>Need of Social Media Marketing</h3>
-                    <p>Social media marketing helps in connecting...</p>
-                    <p>Nulla sed elementum ipsum. Fusce convallis malesuada erat, nec vehicula sem aliquam ac. Ut vel felis eget turpis blandit laoreet et sit amet velit. Donec at mi sed risus hendrerit rutrum. Aenean convallis, ex non varius iaculis, libero est iaculis mauris, nec efficitur risus ipsum in arcu.</p>
-                    <p>Nunc eget odio vel libero bibendum malesuada. Sed eget orci dictum, placerat arcu sed, fermentum nisl. Curabitur lacinia metus vel blandit pharetra. Mauris in ante sed erat rutrum accumsan. Proin vel justo euismod, vehicula turpis sit amet, feugiat urna. Proin sollicitudin felis at lectus rutrum, a ultricies neque rutrum.</p>
-                </div>
-                <div id="article3" class="article-content">
-                    <h3>Need of learning using AI</h3>
-                    <p>Artificial Intelligence is revolutionizing...</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec justo varius ultrices. Ut ac neque sit amet ante accumsan efficitur. Nam feugiat, ipsum non lobortis consequat, turpis ipsum tincidunt mauris, ac interdum lorem libero vel ipsum. Fusce interdum erat non sapien fermentum, sed convallis lacus efficitur.</p>
-                    <p>Mauris id lacus nec mauris lobortis tincidunt. Duis in nisi convallis, dapibus nisl vel, dapibus risus. Mauris scelerisque ac magna vel pharetra. Proin quis elit luctus, euismod eros eget, fringilla velit. Duis euismod mauris vel nisl malesuada elementum. Aliquam erat volutpat.</p>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ramsum Creatives. All rights reserved. | Designed by [Your Name]</p>
-            <nav>
-                <a href="privacy.html">Privacy Policy</a> | 
-                <a href="terms.html">Terms of Service</a>
-            </nav>
+            <div class="footer-info">
+                <p>Contact us: <a href="tel:+917985135684">+917985135684</a> | Email: <a href="mailto:contact@ramsum.in">contact@ramsum.in</a></p>
+                <p>Locations: Mumbai, Delhi, Bahraich</p>
+                <p>&copy; 2024 Ramsum Creatives. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        function toggleArticle(articleId) {
-            var article = document.getElementById(articleId);
-            var articleList = document.querySelectorAll('.article-content');
-            
-            for (var i = 0; i < articleList.length; i++) {
-                if (articleList[i].id === articleId) {
-                    articleList[i].style.display = articleList[i].style.display === 'block' ? 'none' : 'block';
-                } else {
-                    articleList[i].style.display = 'none';
-                }
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

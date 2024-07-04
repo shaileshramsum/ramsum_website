@@ -1,17 +1,15 @@
-/* General styles */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #333;
 }
 
-/* Header styles */
 header {
-    background-color: #333;
-    padding: 10px 0;
+    background: #333;
     color: #fff;
+    padding: 10px 0;
 }
 
 header .container {
@@ -21,182 +19,150 @@ header .container {
 }
 
 header .logo img {
-    width: 150px;
+    max-width: 100px;
 }
 
-header nav .text-on-bar a {
+header nav {
+    display: flex;
+}
+
+header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin-left: 15px;
     font-weight: bold;
 }
 
-header nav .text-on-bar a:hover {
-    color: #ff6600;
+header nav a:hover {
+    color: #ffd700;
 }
 
-/* Hero section styles */
 .plans-hero {
-    background-color: #f4f4f4;
+    background-color: #6a5acd; /* Light purple background */
+    color: #fff;
     padding: 50px 0;
     text-align: center;
-    background-image: url('path-to-your-image.jpg'); /* Update with your image path */
-    background-size: cover;
-    background-position: center;
 }
 
 .plans-hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #333; /* Changed to ensure visibility */
+    font-size: 2.5em;
+    margin: 0;
 }
 
 .plans-hero p {
     font-size: 1.2em;
-    color: #333; /* Changed to ensure visibility */
+    margin-top: 10px;
 }
 
-/* Plans section styles */
 .plans-content {
+    background-color: #87CEFA; /* Light sky blue background */
     padding: 50px 0;
-    background-color: #fff;
-    background-image: url('path-to-your-image.jpg'); /* Update with your image path */
-    background-size: cover;
-    background-position: center;
-}
-
-.plans-content .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .plans-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #333; /* Ensure visibility */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .plans-content p {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 30px;
     text-align: center;
+    margin-bottom: 40px;
+    color: #666;
 }
 
 .plans-grid {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .plan-item {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 5px;
+    width: 300px;
+    text-align: center;
     transition: all 0.3s ease;
-    cursor: pointer;
+}
+
+.plan-item h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .plan-item:hover {
     transform: scale(1.05);
 }
 
-.plan-item h3 a {
-    color: #333;
-    text-decoration: none;
-}
-
-.plan-item h3 a:hover {
-    text-decoration: underline;
-}
-
 .plan-details {
     display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    background-color: #f9f9f9;
+    margin-top: 20px;
 }
 
 .plan-details.active {
     display: block;
 }
 
-/* Other plans section */
-.other-plans {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+.plan-details p {
+    font-size: 1.1em;
+    color: #555;
 }
 
-.other-plans a {
-    background-color: #ddd;
+.plan-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-details ul li {
+    background: #f7f7f7;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
     color: #333;
-    transition: background-color 0.3s ease;
 }
 
-.other-plans a:hover {
-    background-color: #bbb;
-}
-
-/* Contact form styles */
 .contact-form {
-    background-color: #333;
-    color: #fff;
     padding: 50px 0;
-    background-image: url('path-to-your-image.jpg'); /* Update with your image path */
-    background-size: cover;
-    background-position: center;
+    background-color: #f9f9f9;
 }
 
 .contact-form h2 {
-    font-size: 2.5em;
+    font-size: 2em;
+    text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .contact-form form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #444;
-    padding: 30px;
-    border-radius: 10px;
 }
 
-.contact-form .form-group {
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.contact-form .form-group label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
+    color: #666;
 }
 
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-    width: calc(100% - 22px);
+.form-group input, .form-group textarea {
+    width: 100%;
     padding: 10px;
-    border: none;
-    background-color: #555;
-    color: #fff;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    color: #333;
 }
 
-.contact-form .form-group textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: #ff6600;
+button[type="submit"] {
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -205,37 +171,79 @@ header nav .text-on-bar a:hover {
     font-size: 1em;
 }
 
-.contact-form button:hover {
-    background-color: #e65c00;
+button[type="submit"]:hover {
+    background-color: #555;
 }
 
-/* Footer styles */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer a {
-    color: #ff6600;
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #ffd700;
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-info a:hover {
+    color: #fff;
 }
 
-/* Add this to make it easy to update background images */
-.plans-hero, .plans-content, .contact-form {
-    background-image: none; /* Default to none */
+section {
+    position: relative;
 }
 
-.plans-hero[data-bg-image], .plans-content[data-bg-image], .contact-form[data-bg-image] {
-    background-image: var(--bg-image);
-}
-
-.plans-hero, .plans-content, .contact-form {
+section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+/* Custom font styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+h4, h5, h6 {
+    margin-bottom: 10px;
+}
+
+.plan-details p, .plan-details ul li {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* Adding background images */
+.plans-hero::after {
+    background-image: url('path/to/your/hero-image.jpg'); /* Replace with your image path */
+}
+
+.plans-content::after {
+    background-image: url('path/to/your/plans-content-image.jpg'); /* Replace with your image path */
+}
+
+.contact-form::after {
+    background-image: url('path/to/your/contact-form-image.jpg'); /* Replace with your image path */
 }

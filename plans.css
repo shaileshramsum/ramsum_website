@@ -155,13 +155,13 @@ main {
     margin-bottom: 20px;
     color: #ffffff;
     text-align: left;
-    width: 30%; /* Adjusted width */
+    width: 40%; /* Adjusted width */
     padding-left: 20px;
     border-left: 5px solid #4a90e2;
 }
 
 .contact-form form {
-    width: 60%; /* Adjusted width */
+    width: 55%; /* Adjusted width */
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;

@@ -41,7 +41,7 @@ header .company-name {
     font-size: 2.5rem;
     font-weight: bold;
     margin-left: 10px;
-    color: #ffc107; /* Yellow color */
+    color: #ff6b6b; /* Red color */
     text-shadow: 1px 1px 2px #333;
 }
 
@@ -68,7 +68,7 @@ main {
 }
 
 .plans-hero {
-    background-color: #007bff; /* Blue color */
+    background-color: #00695c; /* Teal color */
     color: #ffffff;
     text-align: center;
     padding: 80px 0;
@@ -85,7 +85,7 @@ main {
 }
 
 .plans-content {
-    background-color: #ffffff;
+    background-color: #ffd166; /* Yellow color */
     padding: 40px 0;
     text-align: center;
 }
@@ -111,7 +111,7 @@ main {
 }
 
 .plan-item {
-    background-color: #f8f9fa;
+    background-color: #f9eded; /* Light pink color */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -139,7 +139,7 @@ main {
 }
 
 .contact-form {
-    background-color: #ffb7c5; /* Pink color */
+    background-color: #904e95; /* Purple color */
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
@@ -148,7 +148,7 @@ main {
 .contact-form h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .contact-form form {
@@ -185,18 +185,18 @@ main {
 
 .form-group button {
     display: inline-block;
-    background-color: #28a745; /* Green color */
+    background-color: #ff3d00; /* Orange color */
     color: #ffffff;
     border: none;
-    padding: 14px 40px; /* Increased padding */
+    padding: 18px 40px; /* Increased padding */
     font-size: 1.1rem;
-    border-radius: 8px; /* Increased border radius */
+    border-radius: 25px; /* Increased border radius */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .form-group button:hover {
-    background-color: #218838; /* Darker green color */
+    background-color: #dd2c00; /* Darker orange color */
 }
 
 .footer-info {
@@ -251,7 +251,7 @@ main {
     }
 
     .form-group button {
-        padding: 12px 32px; /* Increased padding */
+        padding: 14px 32px; /* Increased padding */
         font-size: 1rem;
     }
 }

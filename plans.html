@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plans and Pricing for Ramsum Creatives Services">
     <title>Plans - Ramsum Creatives</title>
-    <link rel="stylesheet" href="plans.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Include the CSS from the previous message here */
-    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Ramsum Creatives Logo"></a>
-                <span class="company-name"><a href="index.html">ramsum.in</a></span>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Ramsum Creatives Logo">
+                    <span class="company-name">Ramsum.in</span>
+                </a>
             </div>
             <nav>
                 <div class="text-on-bar">
@@ -37,14 +36,14 @@
         <section class="plans-hero">
             <div class="container">
                 <h1>Our Plans</h1>
-                <p>Discover the right plan to elevate your business. Each plan is tailored to provide maximum value and effectiveness for your needs.</p>
+                <p>Choose the perfect plan for your business needs.</p>
             </div>
         </section>
 
         <section class="plans-content">
             <div class="container">
                 <h2>Pricing Plans</h2>
-                <p>We offer flexible pricing plans to suit businesses of all sizes. Choose the plan that fits your business best.</p>
+                <p>We offer flexible pricing plans to suit businesses of all sizes.</p>
                 <div class="plans-grid">
                     <div class="plan-item">
                         <h3><a href="#" class="plan-toggle" data-plan="basic">Basic</a></h3>
@@ -142,6 +141,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-I52U1L49l7Hh4NKhEKjlAigGldHnlFvnXRTzwhkUyGZQLOyPSkNj6w+fBCFC5Xl7lQsg0kJTT1JcmZf1FFPj2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var toggles = document.querySelectorAll('.plan-toggle');
@@ -151,11 +151,9 @@
                     var target = document.getElementById(toggle.getAttribute('data-plan'));
                     var allDetails = document.querySelectorAll('.plan-details');
                     allDetails.forEach(function (detail) {
-                        if (detail !== target) {
-                            detail.classList.remove('active');
-                        }
+                        detail.classList.remove('active');
                     });
-                    target.classList.toggle('active');
+                    target.classList.add('active');
                 });
             });
         });

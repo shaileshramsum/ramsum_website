@@ -1,4 +1,4 @@
-/* Updated CSS with requested changes */
+/* Updated CSS with refined changes */
 
 /* Reset CSS */
 * {
@@ -40,12 +40,11 @@ header .logo img {
 }
 
 header .company-name {
-    font-size: 2.8rem; /* Increased font size */
+    font-size: 2.8rem;
     font-weight: bold;
     margin-left: 10px;
-    color: #4a90e2; /* Sky blue */
+    color: #7ed957; /* Light green color */
     text-shadow: 1px 1px 2px #333;
-    font-family: 'Pacifico', cursive; /* Creative font */
 }
 
 header nav {
@@ -71,7 +70,7 @@ main {
 }
 
 .plans-hero {
-    background-color: #00695c; /* Teal color */
+    background-color: #00695c;
     color: #ffffff;
     text-align: center;
     padding: 80px 0;
@@ -88,7 +87,7 @@ main {
 }
 
 .plans-content {
-    background-color: #ffd166; /* Yellow color */
+    background-color: #ffd166;
     padding: 40px 0;
     text-align: center;
 }
@@ -114,7 +113,7 @@ main {
 }
 
 .plan-item {
-    background-color: #f9eded; /* Light pink color */
+    background-color: #f9eded;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -142,27 +141,27 @@ main {
 }
 
 .contact-form {
-    background-color: #904e95; /* Purple color */
+    background-color: #904e95;
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
     display: flex;
-    justify-content: space-between; /* Aligning sections side by side */
-    align-items: center; /* Centering items vertically */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact-form h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #ffffff;
-    text-align: left; /* Aligning text left */
-    width: 40%; /* Setting width for left section */
-    padding-left: 20px; /* Adding left padding */
-    border-left: 5px solid #4a90e2; /* Left border */
+    text-align: left;
+    width: 30%; /* Adjusted width */
+    padding-left: 20px;
+    border-left: 5px solid #4a90e2;
 }
 
 .contact-form form {
-    width: 50%; /* Setting width for form */
+    width: 60%; /* Adjusted width */
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
@@ -194,19 +193,20 @@ main {
 
 .form-group button {
     display: inline-block;
-    background-color: #ff3d00; /* Orange color */
+    background-color: #ff3d00;
     color: #ffffff;
     border: none;
-    padding: 18px 40px; /* Increased padding */
+    padding: 18px 40px;
     font-size: 1.1rem;
-    border-radius: 25px; /* Increased border radius */
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px; /* Margin for the button */
+    margin-top: 20px;
+    width: calc(100% - 60px); /* Adjusted width */
 }
 
 .form-group button:hover {
-    background-color: #dd2c00; /* Darker orange color */
+    background-color: #dd2c00;
 }
 
 .footer-info {
@@ -256,29 +256,25 @@ main {
         font-size: 1.5rem;
     }
 
-    .contact-form h2 {
-        font-size: 2rem;
-    }
-
-    .form-group button {
-        padding: 14px 32px; /* Increased padding */
-        font-size: 1rem;
-    }
-
     .contact-form {
-        flex-direction: column; /* Stack sections in a column */
-        align-items: center; /* Center items vertically */
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-form h2 {
-        width: 100%; /* Full width for header on smaller screens */
-        border-left: none; /* No left border on smaller screens */
-        padding-left: 0; /* No left padding on smaller screens */
-        text-align: center; /* Center align on smaller screens */
-        margin-bottom: 20px; /* Bottom margin for header on smaller screens */
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .contact-form form {
-        width: 90%; /* Full width for form on smaller screens */
+        width: 90%;
+    }
+
+    .form-group button {
+        padding: 14px 32px;
+        font-size: 1rem;
     }
 }

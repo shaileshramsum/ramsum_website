@@ -37,7 +37,7 @@ header .logo img {
 }
 
 header .company-name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -116,20 +116,15 @@ main {
 }
 
 .contact-form {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     padding: 40px 0;
     text-align: center;
-    margin-top: 40px;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
 }
 
 .contact-form form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);

@@ -136,3 +136,73 @@ footer a {
 footer a:hover {
     color: #f39c12; /* Orange hover color */
 }
+
+/* Plans section styles */
+.plans-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.plans-section h2 {
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.plan-item {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.plan-item:hover {
+    transform: translateY(-10px);
+}
+
+.plan-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+}
+
+.plan-details.active {
+    display: block;
+}
+
+.plan-details p {
+    margin-bottom: 10px;
+}
+
+.plan-details ul {
+    padding-left: 20px;
+}
+
+.plan-details li {
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+}

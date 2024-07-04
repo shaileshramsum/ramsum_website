@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ramsum Creatives - Marketing, Advertising, Video Production Services">
-    <title>Ramsum Creatives</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Plans and Pricing for Ramsum Creatives Services">
+    <title>Plans - Ramsum Creatives</title>
+    <link rel="stylesheet" href="plans.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt="Ramsum Creatives Logo"></a>
-                <div class="company-name">Ramsum.in</div>
+                <a href="index.html" class="company-name">Ramsum.in</a>
             </div>
             <nav>
-                <div class="text-on-bar">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="services.html">Services</a>
-                    <a href="team.html">Team</a>
-                    <a href="courses.html">Courses</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="plans.html">Plans</a>
-                </div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="team.html">Team</a>
+                <a href="courses.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="plans.html">Plans</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="plans-hero">
+        <section class="plans-hero" style="background-image: url('path/to/your/image.jpg');">
             <div class="container">
-                <h1>Our Plans</h1>
-                <p>Choose the perfect plan for your business needs.</p>
+                <h1 style="color: #fff;">Our Plans</h1>
+                <p style="color: #fff;">Choose the perfect plan for your business needs.</p>
             </div>
         </section>
 
-        <section class="plans-content">
+        <section class="plans-content" style="background-image: url('path/to/your/image.jpg');">
             <div class="container">
                 <h2>Pricing Plans</h2>
                 <p>We offer flexible pricing plans to suit businesses of all sizes.</p>
@@ -80,11 +78,7 @@
                         <h3><a href="#" class="plan-toggle" data-plan="customized">Customized</a></h3>
                         <div id="customized" class="plan-details">
                             <p>Price: Custom</p>
-                            <ul>
-                                <li>Tailored Services</li>
-                                <li>Custom SEO Strategies</li>
-                                <li>Dedicated Support</li>
-                            </ul>
+                            <p>Contact us for a tailored plan to meet your specific requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +87,7 @@
 
         <section class="contact-form">
             <div class="container">
-                <h2>Contact Us for a Custom Plan</h2>
+                <h2>Contact Us</h2>
                 <form action="mailto:contact@ramsum.in" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -148,12 +142,16 @@
                     var target = document.getElementById(toggle.getAttribute('data-plan'));
                     var allDetails = document.querySelectorAll('.plan-details');
                     allDetails.forEach(function (detail) {
-                        detail.classList.remove('active');
+                        if (detail !== target) {
+                            detail.classList.remove('active');
+                        }
                     });
-                    target.classList.add('active');
+                    target.classList.toggle('active');
                 });
             });
         });
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-I52U1L49l7Hh4NKhEKjlAigGldHnlFvnXRTzwhkUyGZQLOyPSkNj6w+fBCFC5Xl7lQsg0kJTT1JcmZf1FFPj2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

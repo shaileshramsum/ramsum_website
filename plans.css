@@ -1,3 +1,4 @@
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,186 +7,211 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
     color: #333;
-    background-color: #f7f7f7;
 }
 
+/* Header styles */
 header {
-    background-color: #ffffff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-header .container {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo img {
-    max-width: 150px;
+.logo img {
+    width: 150px;
 }
 
-header nav {
+nav {
     display: flex;
     align-items: center;
 }
 
-header nav a {
-    color: #333;
+nav a {
+    color: #fff;
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 20px;
     font-weight: 700;
 }
 
-header nav a:hover {
-    color: #007bff;
+nav a:hover {
+    color: #f4c542;
 }
 
+.text-on-bar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero section styles */
 .plans-hero {
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: white;
-    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: #fff;
+    padding: 50px 0;
     text-align: center;
 }
 
 .plans-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5em;
 }
 
 .plans-hero p {
-    font-size: 1.25rem;
+    font-size: 1.2em;
 }
 
+/* Plans content styles */
 .plans-content {
-    padding: 2rem 0;
-}
-
-.plans-content .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #e0f7fa;
+    padding: 50px 0;
 }
 
 .plans-content h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
 .plans-content p {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    color: #555;
 }
 
 .plans-grid {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .plan-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
-    flex: 1 1 calc(25% - 2rem);
-    text-align: center;
-    transition: transform 0.3s ease;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .plan-item:hover {
     transform: scale(1.05);
 }
 
-.plan-item h3 a {
+.plan-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.plan-item a {
+    color: #333;
     text-decoration: none;
-    color: #007bff;
-    font-size: 1.5rem;
-    font-weight: 700;
+}
+
+.plan-item a:hover {
+    color: #f4c542;
 }
 
 .plan-details {
     display: none;
-    text-align: left;
-    margin-top: 1rem;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
 }
 
 .plan-details.active {
     display: block;
 }
 
+/* Contact form styles */
 .contact-form {
-    padding: 2rem 0;
-    background-color: #007bff;
-    color: white;
-}
-
-.contact-form .container {
-    max-width: 800px;
-    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
 }
 
 .contact-form h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form .form-group {
-    margin-bottom: 1rem;
-}
-
-.contact-form label {
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.contact-form button {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #ff7b00;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #ff5900;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer .container {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #f4c542;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #333;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
 footer a {
-    color: #ff7b00;
+    color: #f4c542;
     text-decoration: none;
 }
 
@@ -193,37 +219,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive styles */
 @media (max-width: 768px) {
     .plans-grid {
         flex-direction: column;
         align-items: center;
     }
-
-    .plan-item {
-        flex: 1 1 100%;
-    }
-
-    header .container {
-        flex-direction: column;
-    }
-
-    header nav {
-        margin-top: 1rem;
-        justify-content: center;
-    }
 }
 
-@media (max-width: 480px) {
-    .plans-hero h1 {
-        font-size: 2rem;
-    }
-
-    .plans-hero p {
-        font-size: 1rem;
-    }
-
-    .contact-form h2 {
-        font-size: 1.5rem;
-    }
+/* Allow background images for sections */
+.plans-hero, .plans-content, .contact-form {
+    background-size: cover;
+    background-position: center;
 }

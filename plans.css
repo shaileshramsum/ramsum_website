@@ -139,7 +139,7 @@ main {
 }
 
 .contact-form {
-    background-color: #f0f0f0;
+    background-color: #ffb7c5; /* Pink color */
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
@@ -188,9 +188,9 @@ main {
     background-color: #28a745; /* Green color */
     color: #ffffff;
     border: none;
-    padding: 14px 28px;
+    padding: 14px 40px; /* Increased padding */
     font-size: 1.1rem;
-    border-radius: 5px;
+    border-radius: 8px; /* Increased border radius */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -251,7 +251,7 @@ main {
     }
 
     .form-group button {
-        padding: 12px 24px;
+        padding: 12px 32px; /* Increased padding */
         font-size: 1rem;
     }
 }

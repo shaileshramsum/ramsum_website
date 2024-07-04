@@ -38,7 +38,7 @@ header .logo img {
 }
 
 header .company-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-left: 10px;
     color: #ffc107; /* Yellow color */
@@ -67,10 +67,19 @@ main {
 }
 
 .plans-hero {
-    background-color: #007bff;
+    background-color: #007bff; /* Blue color */
     color: #ffffff;
     text-align: center;
     padding: 80px 0;
+}
+
+.plans-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.plans-hero p {
+    font-size: 1.2rem;
 }
 
 .plans-content {
@@ -83,6 +92,12 @@ main {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
+}
+
+.plans-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
 }
 
 .plans-grid {
@@ -106,7 +121,7 @@ main {
 }
 
 .plan-item h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #333;
 }
@@ -128,7 +143,9 @@ main {
 }
 
 .contact-form h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .contact-form form {
@@ -154,7 +171,7 @@ main {
 .form-group input,
 .form-group textarea {
     width: calc(100% - 20px);
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -165,18 +182,18 @@ main {
 
 .form-group button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #28a745; /* Green color */
     color: #ffffff;
     border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
+    padding: 14px 28px;
+    font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .form-group button:hover {
-    background-color: #0056b3;
+    background-color: #218838; /* Darker green color */
 }
 
 .footer-info {
@@ -202,7 +219,7 @@ main {
     }
 
     header .company-name {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     header nav .text-on-bar a {
@@ -214,6 +231,10 @@ main {
         padding: 60px 0;
     }
 
+    .plans-hero h1 {
+        font-size: 2.5rem;
+    }
+
     .plans-content h2 {
         font-size: 2rem;
     }
@@ -222,8 +243,12 @@ main {
         font-size: 1.5rem;
     }
 
+    .contact-form h2 {
+        font-size: 2rem;
+    }
+
     .form-group button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 12px 24px;
+        font-size: 1rem;
     }
 }

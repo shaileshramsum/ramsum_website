@@ -43,6 +43,26 @@ nav .text-on-bar a:hover {
     text-decoration: underline;
 }
 
+.social-icons {
+    position: fixed;
+    top: 70px; /* Adjust this value to place it right below the navigation bar */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
 .contact-hero {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     padding: 60px 0;
@@ -121,6 +141,17 @@ button[type="submit"]:hover {
     background-color: #feb47b;
 }
 
+.call-now {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.call-now a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
 .office-info {
     background: linear-gradient(to right, #43cea2, #185a9d);
     padding: 40px 0;
@@ -135,11 +166,11 @@ footer {
     text-align: center;
 }
 
-.footer-info a {
+footer a {
     color: #fff;
     text-decoration: none;
 }
 
-.footer-info a:hover {
+footer a:hover {
     text-decoration: underline;
 }

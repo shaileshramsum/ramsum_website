@@ -24,6 +24,7 @@ header {
     background-color: #343a40;
     color: #ffffff;
     padding: 10px 0;
+    text-align: center;
 }
 
 header .logo {
@@ -44,13 +45,14 @@ header .company-name {
 }
 
 header nav {
-    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
 }
 
 header nav .text-on-bar a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -68,7 +70,7 @@ main {
     background-color: #007bff;
     color: #ffffff;
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .plans-content {
@@ -80,6 +82,7 @@ main {
 .plans-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .plans-grid {
@@ -103,8 +106,9 @@ main {
 }
 
 .plan-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .plan-details {
@@ -117,7 +121,7 @@ main {
 }
 
 .contact-form {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0;
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;
@@ -137,12 +141,14 @@ main {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .form-group input,
@@ -162,7 +168,7 @@ main {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -196,11 +202,28 @@ main {
     }
 
     header .company-name {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     header nav .text-on-bar a {
         padding: 8px 12px;
         margin: 0 5px;
+    }
+
+    .plans-hero {
+        padding: 60px 0;
+    }
+
+    .plans-content h2 {
+        font-size: 2rem;
+    }
+
+    .plan-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-group button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }

@@ -1,151 +1,83 @@
-/* Global styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark gray text color */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 .container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header styles */
 header {
-    background-color: #34495e; /* Dark blue background */
-    color: #fff; /* White text color */
+    background-color: #343a40;
+    color: #ffffff;
     padding: 10px 0;
 }
 
-.logo img {
-    max-width: 150px;
+header .logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .logo img {
+    height: 50px;
     vertical-align: middle;
 }
 
-nav {
-    text-align: center;
+header .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-nav a {
-    color: #fff; /* White text color */
+header nav {
+    display: inline-block;
+}
+
+header nav .text-on-bar a {
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    color: #f39c12; /* Orange hover color */
+header nav .text-on-bar a:hover {
+    background-color: #555;
 }
 
-/* Main styles */
 main {
     padding: 20px 0;
 }
 
-section.plans-hero {
-    background-color: #3498db; /* Blue background */
-    color: #fff; /* White text color */
+.plans-hero {
+    background-color: #007bff;
+    color: #ffffff;
     text-align: center;
     padding: 60px 0;
 }
 
-section.plans-content {
-    background-color: #ecf0f1; /* Light gray background */
-    padding: 40px 0;
-}
-
-section.contact-form {
-    background-color: #2ecc71; /* Green background */
-    color: #fff; /* White text color */
+.plans-content {
+    background-color: #ffffff;
     padding: 40px 0;
     text-align: center;
 }
 
-.contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff; /* White background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form form input[type="text"],
-.contact-form form input[type="email"],
-.contact-form form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form form textarea {
-    height: 100px;
-}
-
-.contact-form form button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #e74c3c; /* Red button */
-    border: none;
-    color: #fff; /* White text color */
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contact-form form button[type="submit"]:hover {
-    background-color: #c0392b; /* Darker red hover color */
-}
-
-/* Footer styles */
-footer {
-    background-color: #34495e; /* Dark blue background */
-    color: #fff; /* White text color */
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff; /* White text color */
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #f39c12; /* Orange hover color */
-}
-
-/* Plans section styles */
-.plans-section {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 40px 0;
-    text-align: center;
-}
-
-.plans-section h2 {
-    color: #333; /* Dark gray text color */
+.plans-content h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -157,13 +89,12 @@ footer a:hover {
 }
 
 .plan-item {
-    background-color: #fff; /* White background */
+    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    max-width: 300px;
 }
 
 .plan-item:hover {
@@ -171,38 +102,99 @@ footer a:hover {
 }
 
 .plan-item h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .plan-details {
     display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
     margin-top: 10px;
-    background-color: #fff; /* White background */
-    border-radius: 5px;
 }
 
 .plan-details.active {
     display: block;
 }
 
-.plan-details p {
-    margin-bottom: 10px;
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
 }
 
-.plan-details ul {
-    padding-left: 20px;
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.plan-details li {
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
     margin-bottom: 5px;
 }
 
-/* Responsive styles */
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.footer-info {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.footer-info a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-info a:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 768px) {
-    .plans-grid {
-        grid-template-columns: 1fr;
+    header .logo img {
+        height: 40px;
+    }
+
+    header .company-name {
+        font-size: 1.2rem;
+    }
+
+    header nav .text-on-bar a {
+        padding: 8px 12px;
+        margin: 0 5px;
     }
 }

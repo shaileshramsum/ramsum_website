@@ -40,7 +40,6 @@ header .company-name {
     font-size: 1.8rem;
     font-weight: bold;
     margin-left: 10px;
-    color: #ffc107; /* Yellow color */
 }
 
 header nav {
@@ -117,7 +116,7 @@ main {
 }
 
 .contact-form {
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f8f9fa;
     padding: 40px 0;
     text-align: center;
     margin-top: 40px;

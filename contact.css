@@ -1,21 +1,26 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Reset some basic styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
     color: #333;
 }
 
 header {
-    background-color: #444;
-    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -24,23 +29,35 @@ header {
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 50px;
+    margin-right: 1rem;
 }
 
 .company-name {
-    font-size: 1.5em;
-    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav .text-on-bar a {
-    color: #fff;
-    margin: 0 10px;
+.company-name a {
+    color: green;
     text-decoration: none;
 }
 
-nav .text-on-bar a:hover {
-    text-decoration: underline;
+nav {
+    margin-top: 1rem;
+}
+
+nav .text-on-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
 
 .social-icons {
@@ -53,7 +70,7 @@ nav .text-on-bar a:hover {
     z-index: 1000;
 }
 
-social-icons img {
+.social-icons img {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -64,7 +81,7 @@ social-icons img {
 }
 
 .contact-hero {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    background: linear-gradient(to right, #2193b0, #6dd5ed); /* Blue family */
     padding: 60px 0;
     color: #fff;
     text-align: center;
@@ -129,7 +146,7 @@ button[type="submit"] {
     padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #2193b0;
+    background-color: #2193b0; /* Blue family */
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
@@ -138,7 +155,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #6dd5ed;
+    background-color: #6dd5ed; /* Blue family */
 }
 
 .call-now {
@@ -148,21 +165,21 @@ button[type="submit"]:hover {
 }
 
 .call-now a {
-    color: #2193b0;
+    color: #2193b0; /* Blue family */
     text-decoration: none;
 }
 
 .office-info {
-    background: linear-gradient(to right, #43cea2, #185a9d);
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Green and blue family */
     padding: 40px 0;
     color: #fff;
     text-align: center;
 }
 
 footer {
-    background-color: #444;
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1rem 0;
     text-align: center;
 }
 

@@ -1,4 +1,4 @@
-/* Reset and basic styles */
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,162 +8,105 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
     color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Header styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.logo img {
-    width: 80px;
-    height: auto;
-}
-
-nav {
-    display: inline-block;
-    float: right;
-}
-
-.text-on-bar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-.text-on-bar a:hover {
-    background-color: #555;
-}
-
-/* Main styles */
-main {
-    padding-top: 70px;
-}
-
-.about-hero {
-    background: url('images/about-hero.jpg') center/cover no-repeat;
-    height: 300px;
-    color: #fff;
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.about-hero h1 {
-    font-size: 3rem;
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
 }
 
-.about-content {
-    padding: 40px 0;
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.about-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    margin-bottom: 20px;
-}
-
-.media-content {
-    padding: 40px 0;
-}
-
-.media-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.photo img,
-.video iframe {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-info {
-    font-size: 0.9rem;
-}
-
-.footer-info a {
-    color: #fff;
+.company-name a {
+    color: green;
     text-decoration: none;
 }
 
-.footer-info a:hover {
-    text-decoration: underline;
+nav {
+    margin-top: 1rem;
 }
 
-/* Social media icons */
-.social-icons {
-    position: fixed;
-    top: 150px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    z-index: 1000;
+nav .text-on-bar {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.social-icons a {
-    color: #333;
-    font-size: 1.5rem;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
 
-/* Media queries for responsiveness */
+.about-hero {
+    background-color: #f0f0f0;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.about-content {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
-        padding: 0 10px;
+        width: 100%;
+        padding: 0 1rem;
     }
 
-    .about-hero h1 {
-        font-size: 2.5rem;
+    nav .text-on-bar {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .about-content h2 {
-        font-size: 2rem;
+    nav a {
+        margin: 0.5rem 0;
     }
+}
 
-    .media-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* SEO-related styles */
+img {
+    alt: "Ramsum Creatives Image";
+    loading: lazy;
+}
 
-    .social-icons {
-        display: none; /* Hide social icons on smaller screens */
-    }
+h1, h2, h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a {
+    rel: "noopener noreferrer";
 }

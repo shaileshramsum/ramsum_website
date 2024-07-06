@@ -33,6 +33,16 @@ header {
     margin-right: 1rem;
 }
 
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
 nav {
     margin-top: 1rem;
 }
@@ -50,15 +60,49 @@ nav a {
     font-size: 1rem;
 }
 
-nav .brand-name {
-    color: lightgreen;
-    font-weight: bold;
+main {
+    padding: 2rem 0;
 }
 
-.courses {
+.certificate-process,
+.special-note,
+.courses,
+.authentic-assessment {
     padding: 3rem 0;
-    background-color: #f0f0f0;
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Certificate Process Section */
+.certificate-process {
+    background-color: #e0f7fa; /* Light blue */
+}
+
+.certificate-process h2 {
+    color: #00796b; /* Dark teal */
+}
+
+.certificate-process p {
+    color: #004d40; /* Dark green-blue */
+}
+
+/* Special Note Section */
+.special-note {
+    background-color: #4caf50; /* Same color as the Plans page */
+    color: #fff; /* White text for contrast */
+}
+
+.special-note p {
+    color: #fff; /* Ensuring white text color */
+}
+
+/* Courses Section */
+.courses {
+    background-color: #f1f8e9; /* Light yellow-green */
+}
+
+.courses h2 {
+    color: #33691e; /* Dark green */
 }
 
 .course-list {
@@ -73,44 +117,52 @@ nav .brand-name {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
-    width: 30%;
+    width: 45%;
     margin-bottom: 2rem;
-    text-align: left;
 }
 
 .course-item h3 {
-    margin-bottom: 0.5rem;
-    color: lightgreen;
-}
-
-.course-item p {
-    color: #666;
+    margin-bottom: 1rem;
+    color: #388e3c; /* Company color */
 }
 
 .course-item a {
-    display: block;
-    margin-top: 1rem;
     color: blue;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .course-item a:hover {
     text-decoration: underline;
 }
 
+/* Authentic Assessment Section */
+.authentic-assessment {
+    background-color: #c8e6c9; /* Light green */
+}
+
+.authentic-assessment h2 {
+    color: #33691e; /* Dark green */
+}
+
+.authentic-assessment p {
+    color: #004d40; /* Dark green-blue */
+}
+
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 2rem 0;
 }
 
-footer a {
-    color: #fff;
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-info a {
+    color: #4caf50;
     text-decoration: none;
 }
 
-footer a:hover {
+.footer-info a:hover {
     text-decoration: underline;
 }

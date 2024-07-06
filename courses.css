@@ -9,7 +9,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
 }
 
 header {
@@ -34,6 +33,16 @@ header {
     margin-right: 1rem;
 }
 
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: #2e86c1; /* Blue color */
+    text-decoration: none;
+}
+
 nav {
     margin-top: 1rem;
 }
@@ -51,28 +60,40 @@ nav a {
     font-size: 1rem;
 }
 
-main {
+.certificate-process {
+    background-color: #3498db; /* Blue color */
     padding: 2rem 0;
-}
-
-section {
-    padding: 3rem 0;
-}
-
-h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: #0277bd; /* Blue shade for headings */
+    color: #fff;
 }
 
-h3 {
+.job-opportunity {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.why-choose-us {
+    background-color: #f0f0f0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.special-notes {
+    background-color: #3498db; /* Blue color */
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.courses {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.courses h2 {
     color: #333;
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .course-list {
@@ -85,40 +106,35 @@ p {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 30%;
     margin-bottom: 2rem;
+    text-align: left;
+}
+
+.course-item h3 {
+    color: #2e86c1; /* Blue color */
+    margin-bottom: 1rem;
+}
+
+.course-item p {
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .course-item a {
     display: block;
-    margin-top: 1rem;
+    background-color: #2e86c1; /* Blue color */
+    color: #fff;
     text-decoration: none;
-    color: #0277bd; /* Blue shade for links */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .course-item a:hover {
-    text-decoration: underline;
-}
-
-.special-note {
-    background-color: #0277bd; /* Blue shade from Plans and Contact Us page */
-    color: #fff; /* White text for contrast */
-    padding: 3rem 0;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.special-note h2 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-
-.why-do-we-do-this {
-    background-color: #f0f0f0;
-    padding: 3rem 0;
-    text-align: center;
+    background-color: #1e6091; /* Darker blue on hover */
 }
 
 footer {

@@ -39,7 +39,7 @@ header {
 }
 
 .company-name a {
-    color: #2e86c1; /* Blue color */
+    color: lightgreen;
     text-decoration: none;
 }
 
@@ -60,86 +60,109 @@ nav a {
     font-size: 1rem;
 }
 
-.certificate-process {
-    background-color: #3498db; /* Blue color */
+main {
     padding: 2rem 0;
-    text-align: center;
-    color: #fff;
 }
 
-.job-opportunity {
-    background-color: #f9f9f9;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.why-choose-us {
-    background-color: #f0f0f0;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.special-notes {
-    background-color: #3498db; /* Blue color */
-    padding: 2rem 0;
-    text-align: center;
-    color: #fff;
-}
-
-.courses {
+.certificate-process,
+.special-note,
+.courses,
+.authentic-assessment {
     padding: 3rem 0;
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Certificate Process Section */
+.certificate-process {
+    background-color: #e0f7fa; /* Light blue */
+}
+
+.certificate-process h2 {
+    color: #00796b; /* Dark teal */
+}
+
+.certificate-process p {
+    color: #004d40; /* Dark green-blue */
+}
+
+/* Special Note Section */
+.special-note {
+    background-color: #4caf50; /* Same color as the Plans page */
+    color: #fff; /* White text for contrast */
+}
+
+.special-note p {
+    color: #fff; /* Ensuring white text color */
+}
+
+/* Courses Section */
+.courses {
+    background-color: #f1f8e9; /* Light yellow-green */
 }
 
 .courses h2 {
-    color: #333;
-    margin-bottom: 2rem;
+    color: #33691e; /* Dark green */
 }
 
 .course-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .course-item {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 1.5rem;
-    width: 30%;
+    padding: 1rem;
+    width: 45%;
     margin-bottom: 2rem;
-    text-align: left;
 }
 
 .course-item h3 {
-    color: #2e86c1; /* Blue color */
     margin-bottom: 1rem;
-}
-
-.course-item p {
-    color: #333;
-    margin-bottom: 1rem;
+    color: #388e3c; /* Company color */
 }
 
 .course-item a {
-    display: block;
-    background-color: #2e86c1; /* Blue color */
-    color: #fff;
+    color: blue;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 1rem;
 }
 
 .course-item a:hover {
-    background-color: #1e6091; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Authentic Assessment Section */
+.authentic-assessment {
+    background-color: #c8e6c9; /* Light green */
+}
+
+.authentic-assessment h2 {
+    color: #33691e; /* Dark green */
+}
+
+.authentic-assessment p {
+    color: #004d40; /* Dark green-blue */
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-info a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
 }

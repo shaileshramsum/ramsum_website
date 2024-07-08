@@ -115,11 +115,13 @@ main {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #1565c0; /* Dark blue color for headings */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 40px;
+    color: #00796b; /* Dark teal */
 }
 
 /* Focus Results */

@@ -13,6 +13,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt="Ramsum Creatives Logo"></a>
+                <span class="company-name"><a href="index.html">ramsum.in</a></span>
             </div>
             <nav>
                 <div class="text-on-bar">
@@ -28,7 +29,11 @@
             </nav>
         </div>
     </header>
-
+    <div class="social-icons">
+        <a href="https://www.facebook.com/realramsum" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ramsum.in/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/+917985135684" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+    </div>
     <main>
         <section class="hero">
             <div class="container">
@@ -168,6 +173,8 @@
         </div>
     </footer>
 
+    
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const articleItems = document.querySelectorAll('.article-item');
@@ -191,18 +198,11 @@
                     articleItem.classList.toggle('expanded');
                     if (articleItem.classList.contains('expanded')) {
                         articleContent.style.display = 'block';
-                        articleItem.style.flex = '1 1 100%';
+                        readMoreLink.textContent = 'Read Less';
                     } else {
                         articleContent.style.display = 'none';
-                        articleItem.style.flex = '1 1 calc(33.33% - 20px)';
+                        readMoreLink.textContent = 'Read More';
                     }
-
-                    // Scroll to the clicked article
-                    const articleTop = articleItem.getBoundingClientRect().top + window.scrollY - 80; // Adjusted for fixed header
-                    window.scrollTo({
-                        top: articleTop,
-                        behavior: 'smooth'
-                    });
                 });
             });
         });

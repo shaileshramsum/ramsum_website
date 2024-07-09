@@ -70,7 +70,7 @@ nav a {
 h1.main-heading {
     text-align: center;
     color: #00796b; /* Teal */
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-top: 20px;
 }
 
@@ -84,47 +84,47 @@ section {
 
 /* Section Background Colors */
 #intro {
-    background-color: #b2dfdb; /* Light teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #affordable {
-    background-color: #80cbc4; /* Teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #hassle-free {
-    background-color: #4db6ac; /* Light greenish teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #professional-design {
-    background-color: #26a69a; /* Medium teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #seo-optimized {
-    background-color: #009688; /* Dark teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #updates-maintenance {
-    background-color: #00897b; /* Dark greenish teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #customization {
-    background-color: #00796b; /* Dark teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #support {
-    background-color: #00695c; /* Dark green teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #no-commitments {
-    background-color: #004d40; /* Dark green */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #quick-launch {
-    background-color: #003d33; /* Very dark teal */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 #conclusion {
-    background-color: #00251a; /* Very dark green */
+     background-color: #c8e6c9; /* Light green background color */
 }
 
 /* Heading Styles */
@@ -205,22 +205,25 @@ section p {
 
 /* Footer Styles */
 footer {
-    background: #004d40; /* Dark teal */
+    background-color: #333;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
 
 footer a {
-    color: #fff;
+    color: #6ab04c;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #fff;
 }
 
+footer .footer-info p {
+    margin: 5px 0;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

@@ -91,6 +91,7 @@ nav a {
 }
 
 .contact-content {
+    background-color: #e0f2f1; /* Light blue background color */
     padding: 40px 0;
     display: flex;
     flex-wrap: wrap;

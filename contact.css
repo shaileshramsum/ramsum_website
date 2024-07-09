@@ -186,17 +186,22 @@ button[type="submit"]:hover {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 footer a {
-    color: #fff;
+    color: #6ab04c;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #fff;
+}
+
+footer .footer-info p {
+    margin: 5px 0;
 }
 
 /* Responsive Design */

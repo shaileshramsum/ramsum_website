@@ -151,18 +151,20 @@ main {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.footer-info p {
-    margin: 0.5rem 0;
-}
-
-.footer-info a {
-    color: #4caf50;
+footer a {
+    color: #6ab04c;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-info a:hover {
-    text-decoration: underline;
+footer a:hover {
+    color: #fff;
+}
+
+footer .footer-info p {
+    margin: 5px 0;
 }

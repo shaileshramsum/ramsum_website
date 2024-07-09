@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #007bff;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.company-name a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+nav .text-on-bar a {
+    margin: 0 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+nav .text-on-bar a:hover {
+    color: #007bff;
+}
+
+/* Article Section Styles */
+.article-content {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.article-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.article-content p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #007bff;
+}
+
+.footer-info a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

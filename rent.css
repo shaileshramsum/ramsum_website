@@ -207,12 +207,17 @@ section p {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 footer a {
-    color: #6ab04c;
+    color: #6ab04c; /* Light green color for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -221,9 +226,6 @@ footer a:hover {
     color: #fff;
 }
 
-footer .footer-info p {
-    margin: 5px 0;
-}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

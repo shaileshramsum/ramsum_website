@@ -19,6 +19,7 @@ body {
 }
 
 /* Header Styles */
+/* Header Styles */
 header {
     background-color: #333;
     border-bottom: 1px solid #ddd;
@@ -49,23 +50,6 @@ header .company-name a {
     text-decoration: none;
 }
 
-header nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 0;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 15px;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
-}
-header nav a:hover {
-    color: #fff; /* Hover color */
-}
 
 /* Social Icons */
 .social-icons {

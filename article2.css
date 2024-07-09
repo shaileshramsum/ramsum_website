@@ -24,16 +24,15 @@ body {
 
 /* Header styles */
 header {
-    background-color: #2c3e50;
-    color: #ffffff;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -41,48 +40,44 @@ header .container {
     align-items: center;
 }
 
-.logo a {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 50px;
+    margin-right: 1rem;
 }
 
 .company-name {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
 }
 
 nav {
+    margin-top: 1rem;
+}
+
+nav .text-on-bar {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
-
-nav a:hover {
-    background-color: #34495e;
-}
-
-.text-on-bar {
-    display: flex;
-}
-
 /* Main styles */
 main {
     padding: 20px 0;
 }
 
 .article-intro {
-    background-color: #f2f2f2;
+    background-color: #c8e6c9; /* Light green background color */
     text-align: center;
     padding: 50px 0;
 }

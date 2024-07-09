@@ -17,41 +17,50 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 1rem 0;
 }
 
-header .logo {
-    display: inline-block;
-    margin-right: 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-header .logo img {
-    height: 40px;
-    vertical-align: middle;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-header .company-name {
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.company-name {
     font-size: 1.5rem;
-    vertical-align: middle;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 1rem;
 }
 
 nav .text-on-bar {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-nav .text-on-bar a {
+nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-nav .text-on-bar a:hover {
-    background-color: #555;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
 
 main {

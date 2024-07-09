@@ -41,7 +41,7 @@ header {
 }
 
 .company-name a {
-    color: green;
+    color: lightgreen;
     text-decoration: none;
 }
 
@@ -62,9 +62,6 @@ nav a {
     font-size: 1rem;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
 
 .social-icons {
     position: fixed;

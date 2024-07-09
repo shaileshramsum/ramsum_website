@@ -72,7 +72,7 @@ main {
 }
 
 .article-content {
-    background-color: #ffffff; /* White background for article content */
+    background-color: #6ab04c;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -85,7 +85,7 @@ main {
 }
 
 .article-content h1 {
-    color: #007bff; /* Primary color for headings */
+    color: #1565c0; /* Dark blue color for headings */
 }
 
 .article-content .meta {

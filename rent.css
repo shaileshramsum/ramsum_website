@@ -111,7 +111,7 @@ main {
 
 .rent-website h2 {
     font-size: 2.5em;
-    color: #333;
+    color: #1565c0; /* Dark blue */
     margin-bottom: 20px;
 }
 
@@ -125,9 +125,14 @@ main {
     display: inline-block;
     padding: 10px 20px;
     color: white;
-    background-color: #6ab04c;
+    background-color: #6ab04c; /* Green */
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+.rent-website .learn-more:hover {
+    background-color: #5b9b3a; /* Darker green on hover */
 }
 
 /* Form Section */
@@ -155,7 +160,7 @@ form .right-section {
 
 form h2 {
     font-size: 2rem;
-    color: #1565c0;
+    color: #1565c0; /* Dark blue */
     margin-bottom: 20px;
 }
 
@@ -169,6 +174,7 @@ form label {
     display: block;
     font-size: 1.1rem;
     margin-bottom: 10px;
+    color: #333; /* Dark grey */
 }
 
 form input, form textarea {
@@ -183,7 +189,7 @@ form input, form textarea {
 form button {
     width: 100%;
     padding: 10px;
-    background-color: #6ab04c;
+    background-color: #1565c0; /* Dark blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -192,7 +198,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #5b9b3a;
+    background-color: #0d47a1; /* Darker blue on hover */
 }
 
 /* Footer */
@@ -209,7 +215,7 @@ footer p {
 }
 
 footer a {
-    color: #6ab04c;
+    color: #6ab04c; /* Green */
     text-decoration: none;
     transition: color 0.3s ease;
 }

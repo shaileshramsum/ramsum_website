@@ -188,16 +188,18 @@ footer {
     text-align: center;
 }
 
-.footer-info p {
+footer a {
+    color: #6ab04c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .footer-info p {
     margin: 5px 0;
-}
-
-.footer-info a {
-    color: #007bff;
-}
-
-.footer-info a:hover {
-    color: #0056b3;
 }
 
 /* Responsive Styles */

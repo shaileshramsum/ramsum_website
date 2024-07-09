@@ -19,35 +19,37 @@ body {
 }
 
 /* Header Styles */
-/* Header Styles */
 header {
     background-color: #333;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    z-index: 1000; /* Ensure the navigation stays above other content */
-    width: 100%;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-header .logo {
+nav {
+    margin-top: 1rem;
+}
+
+nav .text-on-bar {
     display: flex;
-    align-items: center;
-    padding: 10px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-header .logo a {
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: bold; /* Ensure text is bold */
+}
+
+.company-name a {
+    color: lightgreen;
     text-decoration: none;
 }
 
-header .logo img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-header .company-name a {
-    color: #6ab04c; /* Light green color for company name */
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-decoration: none;
+nav a:hover {
+    color: lightgreen; /* Hover color */
 }
 
 

@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #343a40; /* Dark background color for header */
+    background-color: #2c3e50; /* Dark background color for header */
     color: #ffffff; /* Header text color */
     padding: 10px 0;
 }
@@ -54,7 +54,7 @@ header nav .text-on-bar a {
 }
 
 header nav .text-on-bar a:hover {
-    color: #ffc107; /* Navigation text hover color */
+    color: #27ae60; /* Navigation text hover color */
 }
 
 main {
@@ -69,23 +69,54 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for article */
 }
 
-.blog-article h1 {
-    color: #343a40; /* Article main heading color */
+/* Section styles with different colors */
+.blog-article section {
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.blog-article h2 {
-    color: #343a40; /* Article subheading color */
-    margin-top: 20px;
+#intro {
+    background-color: #ecf0f1; /* Light grey background for intro */
+}
+
+#what-is-generative-ai {
+    background-color: #d5f5e3; /* Light green background for section */
+}
+
+#key-concepts {
+    background-color: #e8f8f5; /* Light blue background for section */
+}
+
+#applications {
+    background-color: #d1f2eb; /* Light cyan background for section */
+}
+
+#ethical-considerations {
+    background-color: #a3e4d7; /* Mint background for section */
+}
+
+#future-outlook {
+    background-color: #abebc6; /* Light green background for section */
+}
+
+#conclusion {
+    background-color: #d4efdf; /* Light green background for conclusion */
+}
+
+/* Text styles */
+.blog-article h1, .blog-article h2 {
+    color: #2c3e50; /* Dark blue for headings */
 }
 
 .blog-article p {
+    color: #34495e; /* Darker grey for text */
     margin-bottom: 15px;
     line-height: 1.8;
 }
 
 footer {
-    background-color: #343a40; /* Footer background color */
+    background-color: #2c3e50; /* Footer background color */
     color: #ffffff; /* Footer text color */
     padding: 20px 0;
     text-align: center;
@@ -97,7 +128,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffc107; /* Footer link hover color */
+    color: #27ae60; /* Footer link hover color */
 }
 
 /* Responsive Design */

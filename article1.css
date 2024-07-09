@@ -20,49 +20,53 @@ body {
 }
 
 header {
-    background-color: #ffffff; /* White background for header */
-    padding: 10px 0;
-    border-bottom: 1px solid #dee2e6; /* Light border color */
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-header .logo {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-header .logo img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
 }
 
-header .company-name {
-    font-size: 1.2rem;
+.company-name {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
 nav {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 nav .text-on-bar {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-nav .text-on-bar a {
-    color: #343a40; /* Dark text color for navigation links */
+nav a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
-
-nav .text-on-bar a:hover {
-    color: #007bff; /* Primary color for hover effect */
-}
-
 main {
     padding: 20px 0;
 }

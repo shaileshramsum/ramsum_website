@@ -1,38 +1,41 @@
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #e0f7fa; /* Light blue background for the entire page */
+    color: #333;
 }
 
+/* Container */
 .container {
     width: 80%;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
+    padding: 20px;
 }
 
 /* Header Styles */
 header {
     background: #004d40; /* Dark teal */
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 header .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 header .logo img {
     max-height: 40px;
+    margin-right: 10px;
 }
 
 header .company-name {
     font-size: 1.5em;
-    margin-left: 10px;
 }
 
 header nav {
@@ -44,139 +47,106 @@ header nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
+    font-weight: bold;
 }
 
 header nav a:hover {
     text-decoration: underline;
 }
 
-/* Article Styles */
-.rent-website-article {
-    padding: 20px;
+/* Main Heading */
+h1.main-heading {
+    text-align: center;
+    color: #00796b; /* Teal */
+    font-size: 2.5em;
     margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Background Colors */
-section#intro {
-    background-color: #b2ebf2; /* Light cyan */
+#intro {
+    background-color: #b2dfdb; /* Light teal */
 }
 
-section#affordable {
-    background-color: #80deea; /* Cyan */
+#affordable {
+    background-color: #80cbc4; /* Teal */
 }
 
-section#hassle-free {
-    background-color: #4dd0e1; /* Light blue */
+#hassle-free {
+    background-color: #4db6ac; /* Light greenish teal */
 }
 
-section#professional-design {
-    background-color: #26c6da; /* Medium cyan */
+#professional-design {
+    background-color: #26a69a; /* Medium teal */
 }
 
-section#seo-optimized {
-    background-color: #00bcd4; /* Cyan */
+#seo-optimized {
+    background-color: #009688; /* Dark teal */
 }
 
-section#updates-maintenance {
-    background-color: #00acc1; /* Medium blue */
+#updates-maintenance {
+    background-color: #00897b; /* Dark greenish teal */
 }
 
-section#customization {
-    background-color: #0097a7; /* Dark cyan */
+#customization {
+    background-color: #00796b; /* Dark teal */
 }
 
-section#support {
-    background-color: #00838f; /* Dark blue */
+#support {
+    background-color: #00695c; /* Dark green teal */
 }
 
-section#no-commitments {
-    background-color: #006064; /* Dark teal */
+#no-commitments {
+    background-color: #004d40; /* Dark green */
 }
 
-section#quick-launch {
-    background-color: #004d40; /* Dark blue-green */
+#quick-launch {
+    background-color: #003d33; /* Very dark teal */
 }
 
-section#conclusion {
-    background-color: #b2ebf2; /* Light cyan */
+#conclusion {
+    background-color: #00251a; /* Very dark green */
 }
 
-/* Heading Colors */
+/* Heading Styles */
 section h2 {
-    color: #00796b; /* Teal */
-}
-
-section#intro h1 {
     color: #004d40; /* Dark teal */
-    text-align: center;
-    font-size: 2.5em;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-section#affordable h2 {
-    color: #006064; /* Dark teal */
-}
-
-section#hassle-free h2 {
-    color: #00796b; /* Teal */
-}
-
-section#professional-design h2 {
-    color: #00838f; /* Dark blue */
-}
-
-section#seo-optimized h2 {
-    color: #0097a7; /* Dark cyan */
-}
-
-section#updates-maintenance h2 {
-    color: #00acc1; /* Medium blue */
-}
-
-section#customization h2 {
-    color: #00bcd4; /* Cyan */
-}
-
-section#support h2 {
-    color: #26c6da; /* Medium cyan */
-}
-
-section#no-commitments h2 {
-    color: #4dd0e1; /* Light blue */
-}
-
-section#quick-launch h2 {
-    color: #80deea; /* Cyan */
-}
-
-section#conclusion h2 {
-    color: #b2ebf2; /* Light cyan */
-}
-
-/* Text Colors */
-.rent-website-article p {
+section p {
     color: #004d40; /* Dark teal */
-    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 /* Form Section */
 #form-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     background-color: #e0f2f1; /* Light green */
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-info {
-    width: 45%;
+    width: 40%;
 }
 
 .form-info h2 {
     margin-bottom: 10px;
     color: #004d40; /* Dark teal */
+    font-size: 1.5em;
 }
 
 .form-info p {
@@ -185,7 +155,7 @@ section#conclusion h2 {
 }
 
 .form-container {
-    width: 50%;
+    width: 55%;
 }
 
 .form-group {

@@ -14,21 +14,51 @@ body {
 
 header {
     background-color: #333;
-    padding: 10px 0;
-}
-
-header .logo img {
-    max-height: 50px;
-}
-
-nav .text-on-bar a {
     color: #fff;
-    margin: 0 15px;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
     text-decoration: none;
 }
 
-nav .text-on-bar a:hover {
-    text-decoration: underline;
+nav {
+    margin-top: 1rem;
+}
+
+nav .text-on-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
 
 .proposal {

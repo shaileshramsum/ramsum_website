@@ -25,7 +25,6 @@ header {
     position: relative;
     z-index: 1000; /* Ensure the navigation stays above other content */
     width: 100%;
-    color: #fff;
 }
 
 header .logo {

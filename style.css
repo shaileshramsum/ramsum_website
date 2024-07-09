@@ -25,6 +25,32 @@ header {
     padding: 1rem 0;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
 nav {
     margin-top: 1rem;
 }
@@ -40,17 +66,8 @@ nav a {
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
-    font-weight: bold; /* Ensure text is bold */
 }
 
-.company-name a {
-    color: lightgreen;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: lightgreen; /* Hover color */
-}
 
 
 /* Social Icons */

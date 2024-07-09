@@ -176,9 +176,24 @@ form button.submit-btn {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 20px 0;
     text-align: center;
 }
+
+footer a {
+    color: #6ab04c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .footer-info p {
+    margin: 5px 0;
+}
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {

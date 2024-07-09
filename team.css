@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+header .company-name {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+nav .text-on-bar {
+    display: inline-block;
+}
+
+nav .text-on-bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav .text-on-bar a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-top: 80px; /* Adjust according to header height */
+    padding-bottom: 40px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Specific Styles for Team Section */
+.team {
+    background-color: #fff;
+}
+
+.team h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .logo {
+        margin-right: 10px;
+    }
+
+    nav .text-on-bar {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav .text-on-bar a {
+        display: block;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+}

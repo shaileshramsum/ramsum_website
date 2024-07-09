@@ -21,52 +21,52 @@ body {
 /* Header Styles */
 header {
     background-color: #333;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    z-index: 1000; /* Ensure the navigation stays above other content */
-    width: 100%;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-header .logo {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    padding: 10px 0;
 }
 
-header .logo a {
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.company-name a {
+    color: lightgreen;
     text-decoration: none;
 }
 
-header .logo img {
-    height: 40px;
-    margin-right: 10px;
+nav {
+    margin-top: 1rem;
 }
 
-header .company-name a {
-    color: #6ab04c; /* Light green color for company name */
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-header nav {
+nav .text-on-bar {
     display: flex;
-    justify-content: flex-end;
-    padding: 20px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-header nav a {
+nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0 15px;
+    margin: 0 1rem;
     font-size: 1rem;
-    font-weight: 400;
-    transition: all 0.3s ease;
 }
-header nav a:hover {
-    color: #fff; /* Hover color */
-}
-
 /* Social Icons */
 .social-icons {
     position: fixed;

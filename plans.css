@@ -39,7 +39,7 @@ header {
 }
 
 .company-name a {
-    color: lightgreen;
+    color: green;
     text-decoration: none;
 }
 
@@ -60,6 +60,9 @@ nav a {
     font-size: 1rem;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 .plans-hero {
     background: linear-gradient(to right, #43cea2, #185a9d);

@@ -74,7 +74,7 @@ nav a {
 /* Hero Section Styles */
 .services-hero {
    /* background: url('images/services-hero-bg.jpg') no-repeat center center/cover;*/
-     background-color: #c8e6c9;
+     background: linear-gradient(to right, #2193b0, #6dd5ed); /* Blue family */
     color: #fff;
     padding: 60px 0;
     text-align: center;

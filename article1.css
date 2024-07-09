@@ -93,30 +93,34 @@ main {
     margin-bottom: 30px;
 }
 
+.article-content section:nth-child(even) {
+    background-color: #e9f5f5; /* Light green background for even sections */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.article-content section:nth-child(odd) {
+    background-color: #f0fff0; /* Light green background for odd sections */
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .article-content h2 {
-    color: #343a40; /* Dark text color for section headings */
-    margin-bottom: 10px;
+    color: #2f8f83; /* Dark green color for section headings */
+    margin-bottom: 15px;
 }
 
 .article-content h3 {
-    color: #007bff; /* Primary color for subheadings */
-    margin-top: 20px;
-}
-
-.article-content p {
-    margin-bottom: 15px;
-    text-align: justify;
+    color: #0056b3; /* Blue color for sub-section headings */
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #343a40; /* Dark background for footer */
-    color: #ffffff; /* Light text color for footer */
-    padding: 10px 0;
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
     text-align: center;
-}
-
-footer p {
-    margin-bottom: 5px;
+    border-top: 1px solid #dee2e6; /* Light border color */
 }
 
 footer a {
@@ -125,30 +129,15 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #007bff; /* Primary color for hover effect */
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    header, nav .text-on-bar, .article-content, footer .container {
         padding: 10px;
     }
-
-    header .logo img {
-        width: 30px;
-    }
-
-    header .company-name {
-        font-size: 1rem;
-    }
-
     nav .text-on-bar {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 10px;
-        justify-content: flex-start;
-    }
-
-    nav .text-on-bar a {
-        font-size: 0.9rem;
     }
 }

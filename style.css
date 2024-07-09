@@ -21,54 +21,51 @@ body {
 /* Header Styles */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1000; /* Ensure the navigation stays above other content */
+    width: 100%;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo {
+header .logo {
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
-.logo img {
-    height: 50px;
-    margin-right: 1rem;
-}
-
-.company-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.company-name a {
-    color: lightgreen;
+header .logo a {
     text-decoration: none;
 }
 
-nav {
-    margin-top: 1rem;
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
 }
 
-nav .text-on-bar {
+header .company-name a {
+    color: #6ab04c; /* Light green color for company name */
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header nav {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 20px 0;
 }
 
-nav a {
+header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
+    padding: 0 15px;
     font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
 }
-
-
+header nav a:hover {
+    color: #fff; /* Hover color */
+}
 
 /* Social Icons */
 .social-icons {

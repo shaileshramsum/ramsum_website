@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Light blue background for the entire page */
+    background-color: #e0f7fa; /* Light blue background for the entire page */
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #333;
+    background: #004d40; /* Dark teal */
     color: #fff;
     padding: 10px 0;
 }
@@ -52,69 +52,112 @@ header nav a:hover {
 
 /* Article Styles */
 .rent-website-article {
-    background-color: #e6f7ff; /* Different light blue for the article background */
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.rent-website-article h1,
-.rent-website-article h2 {
-    color: #2c3e50;
-}
-
-.rent-website-article p {
-    color: #34495e;
-    margin-bottom: 15px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
+/* Section Background Colors */
 section#intro {
-    background-color: #b0e0e6; /* Light steel blue */
+    background-color: #b2ebf2; /* Light cyan */
 }
 
 section#affordable {
-    background-color: #c0d6e4; /* Light cornflower blue */
+    background-color: #80deea; /* Cyan */
 }
 
 section#hassle-free {
-    background-color: #9ac0cd; /* Light cyan */
+    background-color: #4dd0e1; /* Light blue */
 }
 
 section#professional-design {
-    background-color: #add8e6; /* Light blue */
+    background-color: #26c6da; /* Medium cyan */
 }
 
 section#seo-optimized {
-    background-color: #87ceeb; /* Sky blue */
+    background-color: #00bcd4; /* Cyan */
 }
 
 section#updates-maintenance {
-    background-color: #a2d9e8; /* Light sky blue */
+    background-color: #00acc1; /* Medium blue */
 }
 
 section#customization {
-    background-color: #b2d3f4; /* Light slate blue */
+    background-color: #0097a7; /* Dark cyan */
 }
 
 section#support {
-    background-color: #b0e0e6; /* Light steel blue */
+    background-color: #00838f; /* Dark blue */
 }
 
 section#no-commitments {
-    background-color: #c0d6e4; /* Light cornflower blue */
+    background-color: #006064; /* Dark teal */
 }
 
 section#quick-launch {
-    background-color: #9ac0cd; /* Light cyan */
+    background-color: #004d40; /* Dark blue-green */
 }
 
 section#conclusion {
-    background-color: #add8e6; /* Light blue */
+    background-color: #b2ebf2; /* Light cyan */
+}
+
+/* Heading Colors */
+section h2 {
+    color: #00796b; /* Teal */
+}
+
+section#intro h1 {
+    color: #004d40; /* Dark teal */
+    text-align: center;
+    font-size: 2.5em;
+}
+
+section#affordable h2 {
+    color: #006064; /* Dark teal */
+}
+
+section#hassle-free h2 {
+    color: #00796b; /* Teal */
+}
+
+section#professional-design h2 {
+    color: #00838f; /* Dark blue */
+}
+
+section#seo-optimized h2 {
+    color: #0097a7; /* Dark cyan */
+}
+
+section#updates-maintenance h2 {
+    color: #00acc1; /* Medium blue */
+}
+
+section#customization h2 {
+    color: #00bcd4; /* Cyan */
+}
+
+section#support h2 {
+    color: #26c6da; /* Medium cyan */
+}
+
+section#no-commitments h2 {
+    color: #4dd0e1; /* Light blue */
+}
+
+section#quick-launch h2 {
+    color: #80deea; /* Cyan */
+}
+
+section#conclusion h2 {
+    color: #b2ebf2; /* Light cyan */
+}
+
+/* Text Colors */
+.rent-website-article p {
+    color: #004d40; /* Dark teal */
+    margin-bottom: 15px;
 }
 
 /* Form Section */
@@ -123,7 +166,7 @@ section#conclusion {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #e0ffff; /* Light cyan */
+    background-color: #e0f2f1; /* Light green */
     border-radius: 5px;
 }
 
@@ -133,10 +176,12 @@ section#conclusion {
 
 .form-info h2 {
     margin-bottom: 10px;
+    color: #004d40; /* Dark teal */
 }
 
 .form-info p {
     margin-bottom: 20px;
+    color: #004d40; /* Dark teal */
 }
 
 .form-container {
@@ -151,6 +196,7 @@ section#conclusion {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #004d40; /* Dark teal */
 }
 
 .form-group input[type="text"],
@@ -164,7 +210,7 @@ section#conclusion {
 .submit-button {
     padding: 10px 20px;
     border: none;
-    background-color: #333;
+    background-color: #004d40; /* Dark teal */
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
@@ -172,12 +218,12 @@ section#conclusion {
 }
 
 .submit-button:hover {
-    background-color: #555;
+    background-color: #00796b; /* Teal */
 }
 
 /* Footer Styles */
 footer {
-    background: #333;
+    background: #004d40; /* Dark teal */
     color: #fff;
     text-align: center;
     padding: 10px 0;

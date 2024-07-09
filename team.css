@@ -2,7 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Light green background color */
     color: #333;
     margin: 0;
     padding: 0;
@@ -61,6 +61,7 @@ main {
 
 section {
     padding: 40px 0;
+    background-color: #fff; /* Light green background color */
 }
 
 footer {
@@ -76,11 +77,11 @@ footer p {
 
 /* Specific Styles for Team Section */
 .team {
-    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
 }
 
 .team h2 {
-    text-align: center;
     color: #333;
     font-size: 2rem;
     margin-bottom: 30px;

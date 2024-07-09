@@ -102,6 +102,32 @@ header nav a:hover {
 main {
     padding: 20px 0;
 }
+.rent-website {
+    background-color:#c8e6c9; /* Light green background color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rent-website h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rent-website p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.rent-website .learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #6ab04c;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .hero {
     background-color: #e0f2f1;

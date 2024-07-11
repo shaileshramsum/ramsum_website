@@ -64,23 +64,33 @@ nav a {
 
 
 .social-icons {
+    .social-icons {
     position: fixed;
-    top: 90px; /* Adjust this value to place it right below the navigation bar */
-    left: 10px;
+    top: 90px; /* Adjust as needed to be just below the navigation bar */
+    left: 0;
+    transform: translateY(0);
+    z-index: 100; /* Ensure above other content */
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(144, 238, 144, 0.9); /* Light green background with 90% opacity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
-    opacity: 0.8;
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale on hover */
 }
 
 .contact-hero {

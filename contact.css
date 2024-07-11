@@ -65,7 +65,7 @@ nav a {
 
 .social-icons {
     position: fixed;
-    top: 70px; /* Adjust this value to place it right below the navigation bar */
+    top: 90px; /* Adjust this value to place it right below the navigation bar */
     left: 10px;
     display: flex;
     flex-direction: column;

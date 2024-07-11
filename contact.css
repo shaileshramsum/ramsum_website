@@ -62,9 +62,7 @@ nav a {
     font-size: 1rem;
 }
 
-
 .social-icons {
-    .social-icons {
     position: fixed;
     top: 90px; /* Adjust as needed to be just below the navigation bar */
     left: 0;
@@ -92,7 +90,6 @@ nav a {
 .social-icons a:hover img {
     transform: scale(1.1); /* Scale on hover */
 }
-
 .contact-hero {
     background: linear-gradient(to right, #2193b0, #6dd5ed); /* Blue family */
     padding: 60px 0;

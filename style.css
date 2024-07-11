@@ -70,7 +70,7 @@ nav a {
 /* Social Icons */
 .social-icons {
     position: fixed;
-    top: 70px; /* Adjust as needed to be just below the navigation bar */
+    top: 90px; /* Adjust as needed to be just below the navigation bar */
     left: 0;
     transform: translateY(0);
     z-index: 100; /* Ensure above other content */

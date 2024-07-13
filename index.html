@@ -217,3 +217,10 @@
     </script>
 </body>
 </html>
+<script>
+// Check if the URL ends with .html and redirect to clean URL
+if (location.pathname.endsWith('.html')) {
+    var cleanURL = location.pathname.replace('.html', '');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>

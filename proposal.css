@@ -60,8 +60,39 @@ nav a {
     margin: 0 1rem;
     font-size: 1rem;
 }
+/* Social Icons */
+.social-icons {
+    position: fixed;
+    top: 90px; /* Adjust as needed to be just below the navigation bar */
+    left: 0;
+    transform: translateY(0);
+    z-index: 100; /* Ensure above other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(144, 238, 144, 0.9); /* Light green background with 90% opacity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale on hover */
+}
+
 
 .proposal {
+    background-color: #e0f2f1; /* Light blue background color */
     padding: 50px 0;
     text-align: center;
 }

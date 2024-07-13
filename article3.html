@@ -95,3 +95,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-I52U1L49l7Hh4NKhEKjlAigGldHnlFvnXRTzwhkUyGZQLOyPSkNj6w+fBCFC5Xl7lQsg0kJTT1JcmZf1FFPj2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+<script>
+// Check if the URL ends with .html and redirect to clean URL
+if (location.pathname.endsWith('.html')) {
+    var cleanURL = location.pathname.replace('.html', '');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>

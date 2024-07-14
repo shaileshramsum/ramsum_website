@@ -149,9 +149,9 @@ footer p {
     padding-right: 20px; /* Space between sections */
 }
 
-.ceo-bio-left h2 {
+.ceo-bio-left h3 {
     color: #00796b; /* Dark teal for headings */
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 

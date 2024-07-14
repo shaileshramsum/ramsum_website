@@ -89,6 +89,61 @@ footer p {
     margin: 5px 0;
 }
 
+/* Specific Styles for CEO and Marketing Sections */
+.ceo-bio {
+    padding: 40px 0;
+    background-color: #e0f7fa; /* Light blue background color */
+    color: #333;
+}
+
+.ceo-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ceo-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.ceo-photo {
+    flex: 1;
+    max-width: 300px;
+}
+
+.ceo-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.marketing-bio {
+    padding: 40px 0;
+    background-color: #e0f7fa; /* Light blue background color */
+    color: #333;
+}
+
+.marketing-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marketing-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.marketing-photo {
+    flex: 1;
+    max-width: 300px;
+}
+
+.marketing-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 /* Specific Styles for Team Section */
 .team {
     padding: 40px 0;
@@ -132,82 +187,6 @@ footer p {
     color: #666;
 }
 
-/* CEO Section */
-.ceo-bio {
-    padding: 40px 0;
-    background-color: #e0f7fa; /* Light blue */
-    color: #333;
-}
-
-.ceo-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.ceo-photo {
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-.ceo-photo img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.ceo-details {
-    text-align: center;
-}
-
-.ceo-details h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.ceo-details p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Marketing Head Section */
-.marketing-bio {
-    padding: 40px 0;
-    background-color: #fff9c4; /* Light yellow */
-    color: #333;
-}
-
-.marketing-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.marketing-photo {
-    width: 250px;
-    margin-bottom: 20px;
-}
-
-.marketing-photo img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.marketing-details {
-    text-align: center;
-}
-
-.marketing-details h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.marketing-details p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .ceo-info, .marketing-info {
@@ -219,5 +198,9 @@ footer p {
     nav .text-on-bar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .ceo-photo, .marketing-photo {
+        max-width: 200px;
     }
 }

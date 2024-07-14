@@ -136,23 +136,12 @@ footer p {
     padding: 40px 0;
     background-color: #fff; /* Light green background color */
     color: #333;
+}
+
+.ceo-bio .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.ceo-photo {
-    width: 200px;
-    margin-right: 20px;
-}
-
-.ceo-photo img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-.ceo-details {
-    text-align: center;
 }
 
 .ceo-bio-text {
@@ -169,6 +158,25 @@ footer p {
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
+}
+
+.ceo-info {
+    display: flex;
+    align-items: center;
+}
+
+.ceo-photo {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.ceo-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ceo-details {
+    text-align: center;
 }
 
 /* Responsive Design */

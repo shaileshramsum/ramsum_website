@@ -70,7 +70,6 @@ main {
 
 section {
     padding: 40px 0;
-    background-color: #fff; /* Light green background color */
 }
 
 footer {
@@ -79,6 +78,7 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
 footer a {
     color: #6ab04c; /* Light green color for links */
     text-decoration: none;
@@ -131,45 +131,24 @@ footer p {
     font-size: 1rem;
     color: #666;
 }
-/*new css code which was added for bio input*/
+
+/* CEO Section */
 .ceo-bio {
     padding: 40px 0;
     background-color: #e0f7fa; /* Light blue */
     color: #333;
 }
 
-.ceo-bio .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ceo-bio-left {
-    flex: 1;
-    padding-right: 20px; /* Space between sections */
-}
-
-.ceo-bio-left h3 {
-    color: #00796b; /* Dark teal for headings */
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.ceo-bio-left p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-.ceo-bio-right {
+.ceo-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .ceo-photo {
-    width: 200px;
-    margin-bottom: 20px; /* Space between photo and details */
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 .ceo-photo img {
@@ -182,56 +161,32 @@ footer p {
 }
 
 .ceo-details h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .ceo-details p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666;
-    margin-bottom: 5px;
 }
 
-/* CSS for makrketing head section */
-/*new css code which was added for bio input*/
+/* Marketing Head Section */
 .marketing-bio {
     padding: 40px 0;
-    background-color: #e0f7fa; /* Light blue */
+    background-color: #fff9c4; /* Light yellow */
     color: #333;
 }
 
-.marketing-bio .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.marketing-bio-left {
-    flex: 1;
-    padding-right: 20px; /* Space between sections */
-}
-
-.marketing-bio-left h3 {
-    color: #00796b; /* Dark teal for headings */
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.marketing-bio-left p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-.marketing-bio-right {
+.marketing-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .marketing-photo {
-    width: 200px;
-    margin-bottom: 20px; /* Space between photo and details */
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 .marketing-photo img {
@@ -244,43 +199,25 @@ footer p {
 }
 
 .marketing-details h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .marketing-details p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #666;
-    margin-bottom: 5px;
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header .logo {
-        margin-right: 10px;
+    .ceo-info, .marketing-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     nav .text-on-bar {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav .text-on-bar a {
-        display: block;
-        padding: 10px 0;
-        margin: 5px 0;
-    }
-
-    main {
-        margin-top: 120px;
-    }
-
-    .team-member {
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -1,0 +1,99 @@
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #005f73;
+    border-bottom: 2px solid #005f73;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.payment-info p {
+    color: #d90429;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #005f73;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004346;
+}
+
+.testimonials p {
+    background-color: #e6f4f1;
+    padding: 10px;
+    border-left: 4px solid #005f73;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73;
+    color: #fff;
+    margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramsum - Google My Business Course Payment</title>
+    <link rel="stylesheet" href="educate.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Ramsum</h1>
+            <p>Your pathway to mastering Google My Business</p>
+        </header>
+        
+        <section class="company-info">
+            <h2>About Ramsum</h2>
+            <p>Ramsum is a web-designing and digital marketing company with its head office in Mumbai. We offer various courses to students and working professionals to enhance their digital skills and help them succeed in the competitive market.</p>
+        </section>
+        
+        <section class="payment-info">
+            <h2>Special Offer: Enroll Now for Just ₹499</h2>
+            <p>Hurry up! Prices will increase soon. Pay ₹499 now and secure your spot.</p>
+            <p>After completing this course, we will help business owners achieve their goals. Additionally, we will conduct a test, and those who pass can get an internship or job offer from us.</p>
+        </section>
+
+        <section class="payment-form">
+            <h2>Student Information</h2>
+            <form id="payment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="job">Job:</label>
+                <select id="job" name="job" required>
+                    <option value="business">Business</option>
+                    <option value="job">Job</option>
+                    <option value="student">Student</option>
+                </select>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Proceed to Payment</button>
+            </form>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <p><strong>Rohit Sharma:</strong> "Ramsum helped me scale my business with their excellent course."</p>
+            <p><strong>Priya Singh:</strong> "The training at Ramsum was top-notch and helped me get a job in digital marketing."</p>
+            <p><strong>Aman Verma:</strong> "I highly recommend Ramsum for anyone looking to enhance their digital skills."</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ramsum. All rights reserved.</p>
+    </footer>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Google My Business Course">
+    <meta name="keywords" content="Your, Keywords, Here">
+    <meta name="author" content="Your Name or Company">
     <title>Ramsum - Google My Business Course Payment</title>
     <link rel="stylesheet" href="educate.css">
 </head>
@@ -15,7 +18,9 @@
         
         <section class="company-info">
             <h2>About Ramsum</h2>
-            <p>Ramsum is a web-designing and digital marketing company with its head office in Mumbai. We offer various courses to students and working professionals to enhance their digital skills and help them succeed in the competitive market.</p>
+            <p>Ramsum is a web design and digital marketing company which also offers a range of courses designed to enhance the digital skills of students and working professionals, helping them to succeed in a competitive market. Over 100 companies have benefited from our services and courses. </p>
+                <h3>This Google My Business course/workshop will surely help you because we actually educate you with tips and tricks! We don't sell any courses during this workshop.</h3> 
+            <p>Learn all the secrets which an agency uses to rank Google My Business on top. After this, we do two things: 1. We help business owners if they face any difficulty. 2. We conduct a test for interested candidates which leads to a job/internship in our company.</p>
         </section>
         
         <section class="payment-info">
@@ -60,8 +65,18 @@
 
     <footer>
         <p>&copy; 2024 Ramsum. All rights reserved.</p>
+         <ul>
+                <li><a href="educate.html">Payment</a></li><li><a href="privacy_policy.html">Privacy Policy</a></li><li><a href="terms_conditions.html">Terms and Conditions</a></li><li><a href="cancellation_refund.html">Cancellation and Refund</a></li><li><a href="shipping_delivery.html">Shipping and Delivery</a></li>
+            </ul>
     </footer>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
+<script>
+// Check if the URL ends with .html and redirect to clean URL
+if (location.pathname.endsWith('.html')) {
+    var cleanURL = location.pathname.replace('.html', '');
+    window.history.replaceState({}, document.title, cleanURL);
+}
+</script>
